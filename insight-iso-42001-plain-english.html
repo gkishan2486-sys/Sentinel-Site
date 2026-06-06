@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISO/IEC 42001 in Plain English: What Certification Actually Requires | Sentinel</title>
+<meta name="description" content="ISO/IEC 42001 is the management-system standard for AI. Here's what certification actually requires, clause by clause, without the consultant fog.">
+<link rel="icon" type="image/svg+xml" href="assets/sag-favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/sag.css">
+<style>
+.article{max-width:740px;margin:0 auto}
+.article h2{font-family:'Fraunces',serif;color:var(--txt);font-size:clamp(22px,2.6vw,30px);margin:42px 0 14px}
+.article p{color:var(--muted);font-size:16.5px;margin-bottom:16px}
+.article p b,.article li b{color:var(--txt)}
+.article ul{padding-left:22px;margin-bottom:16px}
+.article li{color:var(--muted);font-size:16.5px;margin-bottom:9px}
+.article .lede{font-size:19px;color:var(--txt);border-left:3px solid var(--gold);padding-left:20px;margin-bottom:8px}
+.takeaway{border:1px solid rgba(232,199,102,.3);border-left:3px solid var(--gold);background:linear-gradient(180deg,rgba(232,199,102,.06),transparent);border-radius:0 16px 16px 0;padding:26px 30px;margin:38px 0}
+.takeaway h3{font-family:'Fraunces',serif;font-size:18px;color:var(--txt);margin-bottom:10px}
+.takeaway p,.takeaway li{font-size:14.5px;color:var(--muted)}
+.byline{font-size:13px;color:var(--muted);margin-top:18px}
+.disc{font-size:12.5px;color:var(--muted-light);border-top:1px solid var(--panel-line);margin-top:48px;padding-top:18px}
+.backlink{display:inline-block;margin-bottom:8px;font-size:13px;color:var(--gold);font-weight:600}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav-inner">
+  <a href="index.html" class="logo"><svg class="eye" width="44" height="30" viewBox="0 0 60 40" aria-hidden="true">
+      <defs><linearGradient id="lgnav" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8C766"/><stop offset=".5" stop-color="#F5E3A8"/><stop offset="1" stop-color="#B8943B"/></linearGradient></defs>
+      <g transform="translate(30 21)"><path d="M-26 0 C-15.5 -15.5 15.5 -15.5 26 0 C15.5 15.5 -15.5 15.5 -26 0 Z" fill="none" stroke="url(#lgnav)" stroke-width="2.6"/><circle r="7.8" fill="none" stroke="url(#lgnav)" stroke-width="2.2"/><circle r="3.4" fill="url(#lgnav)"/></g></svg><span class="word"><b>SENTINEL</b><span>ASSURANCE GROUP</span></span></a>
+  <div class="nav-links">
+    <a href="services.html">Services</a><a href="greenlight.html">GreenLight</a><a href="method.html">Our Method</a><a href="about.html">About</a>
+    <a href="insights.html" class="active">Insights</a><a href="contact.html" class="nav-cta">Book a Call</a>
+  </div>
+</div></nav>
+<header class="phero"><div class="wrap">
+  <a href="insights.html" class="backlink">&larr; All briefings</a>
+  <div class="eyebrow">Briefing 03 &middot; ISO/IEC 42001</div>
+  <div class="rule"></div>
+  <h1 style="max-width:760px">ISO/IEC 42001 in plain English: <span class='g grad'>what certification actually requires.</span></h1>
+  <p class="byline">AI management systems &middot; ~6 min read</p>
+</div></header>
+<section><div class="wrap"><div class="article">
+
+  <p class="lede">ISO/IEC 42001 is not a technical test of your model. It is a test of whether your organization manages AI on purpose. That distinction explains almost everything about what certification asks of you.</p>
+  <h2>What kind of standard this is</h2>
+  <p>42001 is a <b>management-system standard</b>, the same family as ISO 9001 (quality) and ISO/IEC 27001 (information security). It does not certify that a given model is &ldquo;safe&rdquo; or &ldquo;unbiased.&rdquo; It certifies that you have a functioning system &mdash; policies, roles, processes, records &mdash; for governing AI across its life, and that the system actually runs. Auditors look for evidence that you do what you say, not for a perfect algorithm.</p>
+  <h2>The two halves you must satisfy</h2>
+  <p><b>The clauses (4&ndash;10)</b> are the management-system backbone, and they are non-negotiable for certification:</p>
+  <ul>
+    <li><b>Context &amp; scope</b> &mdash; what AI you govern and why.</li>
+    <li><b>Leadership &amp; policy</b> &mdash; a top-level AI policy with real ownership.</li>
+    <li><b>Planning</b> &mdash; risk and impact assessment, objectives.</li>
+    <li><b>Support</b> &mdash; competence, awareness, documented information.</li>
+    <li><b>Operation</b> &mdash; the controls running in practice.</li>
+    <li><b>Performance evaluation</b> &mdash; internal audit and management review.</li>
+    <li><b>Improvement</b> &mdash; corrective action when things go wrong.</li>
+  </ul>
+  <p><b>Annex A</b> is the catalogue of 39 controls &mdash; data governance, human oversight, transparency, lifecycle management, third-party AI, and more. You select what applies through a <b>Statement of Applicability</b>, justifying every inclusion and exclusion. There is no &ldquo;turn everything on&rdquo; shortcut; the justification is the point.</p>
+  <h2>What an auditor actually wants</h2>
+  <p>Three things, repeatedly: <b>Is it written? Is it followed? Can you prove it?</b> A policy nobody references fails. A control you perform but never record fails. The organizations that struggle are not the ones with weak AI &mdash; they are the ones whose good practices live in people&rsquo;s heads instead of in evidence.</p>
+  <div class="takeaway">
+    <h3>How to read your own readiness</h3>
+    <p>Walk the clauses and ask, for each: do we have a document, is there proof we follow it, and could a stranger audit it? Where the answer is &ldquo;it&rsquo;s informal,&rdquo; you have found your gap. That walk is exactly what a diagnostic produces &mdash; mapped to all 39 Annex A controls and prioritized.</p>
+  </div>
+  <p>Certification is earned by an accredited certification body, not by us &mdash; we prepare you and stay on the right side of that line. But the work to get there is knowable, sequenced, and far less mysterious than the market makes it sound.</p>
+
+  <p class="disc">This briefing is general information from Sentinel Assurance Group, not legal advice. Regulatory dates and requirements change &mdash; we maintain these briefings, but verify against primary sources and counsel before acting. Last reviewed June 5, 2026.</p>
+  <a href="iso-42001.html" class="btn btn-glass" style="margin-top:24px">See the ISO/IEC 42001 service tiers &rarr;</a>
+</div></div></section>
+<section class="cta"><div class="wrap">
+  <h2>Not sure which of these reach you?<br><span class="g grad">Find out in 30 minutes.</span></h2>
+  <p>The free AI Risk Exposure call maps your AI footprint to the obligations that actually apply &mdash; and the ones that don&rsquo;t.</p>
+  <a class="btn btn-gold" href="contact.html">Book the call &rarr;</a>
+</div></section>
+<footer><div class="wrap">
+  <div class="foot-top">
+    <div style="max-width:360px"><svg width="230" height="107" viewBox="0 0 240 112" style="margin-bottom:14px" aria-label="Sentinel Assurance Group">
+        <defs><linearGradient id="lgfoot" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8C766"/><stop offset=".5" stop-color="#F5E3A8"/><stop offset="1" stop-color="#B8943B"/></linearGradient></defs>
+        <text x="120" y="46" text-anchor="middle" font-family="Fraunces,serif" font-weight="500" font-size="40" fill="#EFEEE9" letter-spacing="1.5">SENTINEL</text>
+        <line x1="22" y1="68" x2="86" y2="68" stroke="url(#lgfoot)" stroke-width="1.6"/>
+        <g transform="translate(120 68)"><path d="M-19 0 C-11 -11.5 11 -11.5 19 0 C11 11.5 -11 11.5 -19 0 Z" fill="none" stroke="url(#lgfoot)" stroke-width="2"/><circle r="5.6" fill="none" stroke="url(#lgfoot)" stroke-width="1.6"/><circle r="2.4" fill="url(#lgfoot)"/></g>
+        <line x1="154" y1="68" x2="218" y2="68" stroke="url(#lgfoot)" stroke-width="1.6"/>
+        <text x="120" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600" font-size="11" fill="#9AA1AD" letter-spacing="4.5">ASSURANCE GROUP</text></svg><div>Independent AI assurance, built to accreditation standards.</div></div>
+    <div class="foot-links"><a href="services.html">Services</a><a href="greenlight.html">GreenLight</a><a href="method.html">Our Method</a><a href="about.html">About</a><a href="insights.html">Insights</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+  </div>
+  <div class="foot-legal">&copy; 2026 Sentinel Assurance Group. Sentinel Assurance Group provides assessment and advisory services. We are not a law firm, and nothing on this site is legal advice. We are not a certification body and do not issue ISO certifications.</div>
+</div></footer>
+</body></html>

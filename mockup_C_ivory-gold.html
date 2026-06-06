@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Option C — Ivory &amp; Gold | Sentinel Assurance Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF9F4; --card:#FFFFFF; --ink:#17181A; --body:#3A3D42; --muted:#73767D;
+    --gold:#B98A2E; --gold-bright:#D4A636; --gold-tint:#F6EEDC; --line:#E9E4D8; --dark:#141517;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Instrument Sans',sans-serif;background:var(--bg);color:var(--body);line-height:1.65;font-size:16px}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+  h1,h2{font-family:'Newsreader',serif;font-weight:500;color:var(--ink);letter-spacing:-.01em;line-height:1.08}
+  h3{color:var(--ink)}
+  a{text-decoration:none;color:inherit}
+  section{padding:96px 0}
+  .eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .btn{display:inline-block;padding:14px 28px;border-radius:99px;font-weight:600;font-size:15px;transition:.2s}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-dark:hover{background:#000;transform:translateY(-1px)}
+  .btn-gold{background:var(--gold);color:#fff}
+  .btn-gold:hover{background:var(--gold-bright)}
+  .btn-line{border:1.5px solid var(--line);color:var(--ink);background:#fff}
+  .btn-line:hover{border-color:var(--gold);color:var(--gold)}
+  em.acc{font-style:italic;color:var(--gold)}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(251,249,244,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .logo{font-weight:700;font-size:17px;color:var(--ink);display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+  .logo .mark{width:30px;height:30px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:13px;font-weight:700}
+  .nav-links{display:flex;gap:30px;align-items:center;font-size:14.5px}
+  .nav-links a{color:var(--body);font-weight:500}
+  .nav-links a:hover{color:var(--gold)}
+  .nav-cta{background:var(--ink);color:#fff!important;padding:9px 20px;border-radius:99px;font-weight:600}
+  .nav-cta:hover{background:#000}
+  @media(max-width:860px){.nav-links a:not(.nav-cta){display:none}}
+
+  .hero{padding:110px 0 90px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;top:60px;right:-180px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,var(--gold-tint),transparent 70%)}
+  .hero .wrap{position:relative;z-index:1}
+  .hero h1{font-size:clamp(42px,6vw,76px);max-width:880px;margin-bottom:28px}
+  .hero p{font-size:19px;color:var(--muted);max-width:620px;margin-bottom:38px}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hero-badges{display:flex;gap:24px;flex-wrap:wrap;margin-top:54px;padding-top:28px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);font-weight:500}
+  .hero-badges b{color:var(--ink)}
+
+  .ticker{background:var(--dark);color:rgba(255,255,255,.85);padding:14px 0;font-size:13.5px;font-weight:500}
+  .ticker .wrap{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+  .ticker b{color:var(--gold-bright);font-weight:700}
+  .ticker .dot{opacity:.4}
+
+  .problem h2{font-size:clamp(30px,4vw,46px);max-width:640px;margin-bottom:24px}
+  .problem p{max-width:740px;color:var(--muted);font-size:17px;margin-bottom:16px}
+
+  .services{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:48px;flex-wrap:wrap}
+  .sec-head h2{font-size:clamp(30px,3.8vw,44px);max-width:560px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+  .card{background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:30px;display:flex;flex-direction:column;transition:.22s}
+  .card:hover{background:var(--gold-tint);border-color:var(--gold);transform:translateY(-4px)}
+  .card .ic{width:38px;height:38px;border-radius:10px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:16px;margin-bottom:18px}
+  .card h3{font-size:18px;font-weight:600;margin-bottom:10px}
+  .card p{font-size:14.5px;color:var(--muted);flex:1;margin-bottom:20px}
+  .price{font-size:14px;font-weight:700;color:var(--gold)}
+  .price small{display:block;font-weight:500;color:var(--muted);font-size:12px;margin-top:2px}
+
+  .diff{background:var(--dark);color:#fff;border-radius:32px;margin:0 24px}
+  @media(min-width:1180px){.diff{margin:0 auto;max-width:1168px}}
+  .diff h2{color:#fff;font-size:clamp(30px,4vw,46px);max-width:640px;margin-bottom:26px}
+  .diff p{color:rgba(255,255,255,.7);max-width:720px;font-size:17px;margin-bottom:16px}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:50px}
+  .stat{border:1px solid rgba(212,166,54,.35);border-radius:16px;padding:24px;background:rgba(212,166,54,.06)}
+  .stat b{display:block;font-family:'Newsreader',serif;font-size:27px;color:var(--gold-bright);margin-bottom:6px}
+  .stat span{font-size:13.5px;color:rgba(255,255,255,.65)}
+
+  .process h2{font-size:clamp(30px,3.8vw,44px);max-width:700px;margin-bottom:48px}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;counter-reset:s}
+  .step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;position:relative}
+  .step::before{counter-increment:s;content:counter(s);position:absolute;top:24px;right:24px;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--gold);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+  .step h3{font-size:17px;font-weight:600;margin-bottom:8px;max-width:80%}
+  .step p{font-size:14px;color:var(--muted)}
+
+  .honesty{padding:0 0 96px}
+  .honesty-box{background:var(--gold-tint);border-radius:24px;padding:36px 40px;max-width:880px}
+  .honesty-box h3{font-family:'Newsreader',serif;font-size:21px;font-weight:500;margin-bottom:10px}
+  .honesty-box p{font-size:15px;color:#6B5E3F}
+
+  .cta{text-align:center}
+  .cta h2{font-size:clamp(32px,4.4vw,52px);margin-bottom:18px}
+  .cta p{color:var(--muted);max-width:560px;margin:0 auto 36px;font-size:17px}
+
+  footer{background:var(--dark);color:rgba(255,255,255,.6);padding:56px 0 40px;font-size:13.5px}
+  footer .logo{color:#fff}
+  .foot-top{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:36px}
+  .foot-links{display:flex;gap:24px;flex-wrap:wrap}
+  .foot-links a:hover{color:var(--gold-bright)}
+  .foot-legal{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;font-size:12.5px;line-height:1.7}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap nav-inner">
+  <a href="#" class="logo"><span class="mark">S</span><span>Sentinel Assurance</span></a>
+  <div class="nav-links">
+    <a href="#services">Services</a><a href="#greenlight">GreenLight</a><a href="#method">Our Method</a><a href="#about">About</a>
+    <a href="#contact" class="nav-cta">Book a Call</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">Independent AI Assurance</div>
+  <h1>Prove your AI is governed. <em class="acc">Before someone else proves it isn’t.</em></h1>
+  <p>Third-party AI governance assessments, ISO/IEC 42001 readiness, and adversarial testing — with the same documented rigor our founders apply inside an ISO/IEC 17025-accredited laboratory.</p>
+  <div class="hero-ctas">
+    <a class="btn btn-dark" href="#contact">Book a free AI Risk Exposure call →</a>
+    <a class="btn btn-line" href="#method">See how we work</a>
+  </div>
+  <div class="hero-badges">
+    <span><b>ISO/IEC 17025</b> lab operations</span>
+    <span><b>NIST AI RMF</b> + <b>ISO/IEC 42001</b> aligned</span>
+    <span><b>OWASP LLM Top 10</b> red-teaming</span>
+    <span><b>Zero</b> certificates sold — by design</span>
+  </div>
+</div></header>
+
+<div class="ticker"><div class="wrap">
+  <span><b>Texas TRAIGA</b> — in force Jan 1, 2026</span><span class="dot">•</span>
+  <span><b>Colorado AI Act</b> — June 30, 2026</span><span class="dot">•</span>
+  <span><b>EU AI Act</b> high-risk obligations — Aug 2, 2026</span><span class="dot">•</span>
+  <span>NIST AI RMF alignment is the recognized safe harbor</span>
+</div></div>
+
+<section class="problem"><div class="wrap">
+  <div class="eyebrow">The Moment</div>
+  <h2>AI regulation stopped being hypothetical.</h2>
+  <p>If your business deploys AI — even a vendor’s model behind your own brand — you now carry obligations you may have never inventoried: impact assessments, risk management programs, human-oversight controls, incident-response duties. Enterprise buyers are ahead of the regulators: ISO/IEC 42001 is already appearing in RFPs.</p>
+  <p>Most firms answering this moment are advisors selling slideware, or auditors who have never operated under accreditation themselves. We built Sentinel to be the third option.</p>
+</div></section>
+
+<section class="services" id="services"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Services</div><h2>One ladder. Start where you <em class="acc">actually</em> are.</h2></div>
+    <a class="btn btn-line" href="#contact">Free triage →</a>
+  </div>
+  <div class="grid">
+    <div class="card"><div class="ic">◔</div><h3>AI Readiness Snapshot</h3><p>Fixed-scope, fast. Twelve anchor controls scored 0–4 against NIST AI RMF and ISO/IEC 42001, with a board-ready report.</p><div class="price">From $5,000<small>~2 weeks</small></div></div>
+    <div class="card"><div class="ic">◈</div><h3>Gap Assessment</h3><p>The full Sentinel Control Map™: 47 NIST AI RMF subcategories mapped to ISO/IEC 42001 clauses, scored with evidence.</p><div class="price">From $18,000<small>4–8 weeks</small></div></div>
+    <div class="card"><div class="ic">⬡</div><h3>ISO/IEC 42001 Implementation</h3><p>A complete, certification-ready AI management system — policy to incident response — built with you, not dropped on you.</p><div class="price">From $40,000<small>3–6 months</small></div></div>
+    <div class="card" id="greenlight"><div class="ic">●</div><h3>Sentinel GreenLight™</h3><p>Application assurance for software teams: security, usability, privacy, and AI-governance triage before you ship.</p><div class="price">Free triage · from $5,000<small>Two-track: AI &amp; conventional</small></div></div>
+  </div>
+</div></section>
+
+<section><div class="diff" id="method"><div class="wrap" style="padding-top:80px;padding-bottom:80px">
+  <div class="eyebrow">Why Sentinel</div>
+  <h2>Assurance is our operating system, not our pitch.</h2>
+  <p>Our leadership operates an ISO/IEC 17025-accredited, DEA-registered testing laboratory — a business where impartiality, chain of custody, method validation, and documented evidence are conditions of existence, audited every year. ANAB, the body that accredits our laboratory world, is the same body accrediting ISO/IEC 42001 certification programs.</p>
+  <p>We did not read about assurance. We live under it. That discipline — not a slide template — is what we bring to your AI program.</p>
+  <div class="stats">
+    <div class="stat"><b>ISO/IEC 17025</b><span>Accredited laboratory operations behind the firm</span></div>
+    <div class="stat"><b>47 controls</b><span>Sentinel Control Map™ — NIST AI RMF ↔ ISO/IEC 42001</span></div>
+    <div class="stat"><b>3 frameworks</b><span>NIST AI RMF · ISO/IEC 42001 · EU AI Act, one assessment</span></div>
+    <div class="stat"><b>0 certificates</b><span>We prepare you; accredited bodies certify you</span></div>
+  </div>
+</div></div></section>
+
+<section class="process"><div class="wrap">
+  <div class="eyebrow">How It Works</div>
+  <h2>A straight line from “where are we?” to <em class="acc">“certified and sustained.”</em></h2>
+  <div class="steps">
+    <div class="step"><h3>Snapshot</h3><p>A two-week readiness snapshot tells you exactly where you stand — and whether you need anything more.</p></div>
+    <div class="step"><h3>Gap Assessment</h3><p>Full Control Map scoring with prioritized remediation, sequenced by regulatory deadline and business risk.</p></div>
+    <div class="step"><h3>Implementation</h3><p>We build the management system: policies, risk SOPs, impact assessments, incident response, training.</p></div>
+    <div class="step"><h3>Certify &amp; Sustain</h3><p>Certification-readiness sprint, then managed AIMS support so the program survives contact with reality.</p></div>
+  </div>
+</div></section>
+
+<section class="honesty" id="about"><div class="wrap">
+  <div class="honesty-box">
+    <h3>What we won’t tell you</h3>
+    <p>That compliance is guaranteed, that one document set makes you “audit-proof,” or that you need services you don’t. Our triage is free and our scoping is honest — if a snapshot is all you need, that’s what we’ll recommend.</p>
+  </div>
+</div></section>
+
+<section class="cta" id="contact"><div class="wrap">
+  <h2>Find out where you stand.<br><em class="acc">Free, 30 minutes, no deck.</em></h2>
+  <p>The AI Risk Exposure call: we walk your AI footprint, flag your likely obligations, and tell you plainly whether and where you need help.</p>
+  <a class="btn btn-gold" href="mailto:gkishan2486@gmail.com?subject=AI%20Risk%20Exposure%20Call">Book the call →</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="foot-top">
+    <div style="max-width:340px"><div class="logo" style="margin-bottom:12px"><span class="mark">S</span><span>Sentinel Assurance</span></div>Independent AI assurance, built to accreditation standards.</div>
+    <div class="foot-links"><a href="#services">Services</a><a href="#greenlight">GreenLight</a><a href="#method">Our Method</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+  </div>
+  <div class="foot-legal">© 2026 Sentinel Assurance Group. Sentinel Assurance Group provides assessment and advisory services. We are not a law firm, and nothing on this site is legal advice. We are not a certification body and do not issue ISO certifications.</div>
+</div></footer>
+
+</body>
+</html>
