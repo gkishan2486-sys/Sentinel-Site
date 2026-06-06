@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="100" viewBox="0 0 260 50">
+  <!-- For light backgrounds. Note: Fraunces + Inter must be available; outline text before print use. -->
+  <g transform="translate(26 25)">
+    <path d="M-22 0 C-13 -13 13 -13 22 0 C13 13 -13 13 -22 0 Z" fill="none" stroke="#B8943B" stroke-width="2.2"/>
+    <circle r="6.5" fill="none" stroke="#0A1220" stroke-width="1.8"/>
+    <circle r="2.8" fill="#B8943B"/>
+  </g>
+  <text x="60" y="24" font-family="Fraunces, Georgia, serif" font-weight="500" font-size="21" fill="#0A1220" letter-spacing=".8">SENTINEL</text>
+  <text x="60" y="41" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="8.5" fill="#5E6877" letter-spacing="3.4">ASSURANCE GROUP</text>
+</svg>

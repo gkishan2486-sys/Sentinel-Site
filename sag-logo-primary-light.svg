@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="224" viewBox="0 0 240 112">
+  <!-- Primary lockup, light backgrounds / report covers. Outline text before print use. -->
+  <text x="120" y="46" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="500" font-size="40" fill="#0A1220" letter-spacing="1.5">SENTINEL</text>
+  <line x1="22" y1="68" x2="86" y2="68" stroke="#B8943B" stroke-width="1.6"/>
+  <g transform="translate(120 68)">
+    <path d="M-19 0 C-11 -11.5 11 -11.5 19 0 C11 11.5 -11 11.5 -19 0 Z" fill="none" stroke="#B8943B" stroke-width="2"/>
+    <circle r="5.6" fill="none" stroke="#0A1220" stroke-width="1.6"/>
+    <circle r="2.4" fill="#B8943B"/>
+  </g>
+  <line x1="154" y1="68" x2="218" y2="68" stroke="#B8943B" stroke-width="1.6"/>
+  <text x="120" y="100" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="11" fill="#5E6877" letter-spacing="4.5">ASSURANCE GROUP</text>
+</svg>

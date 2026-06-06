@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="100" viewBox="0 0 260 50">
+  <!-- For dark backgrounds. Note: Fraunces + Inter must be available; outline text before print use. -->
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#E8C766"/><stop offset=".5" stop-color="#F5E3A8"/><stop offset="1" stop-color="#B8943B"/>
+  </linearGradient></defs>
+  <g transform="translate(26 25)">
+    <path d="M-22 0 C-13 -13 13 -13 22 0 C13 13 -13 13 -22 0 Z" fill="none" stroke="url(#g)" stroke-width="2.2"/>
+    <circle r="6.5" fill="none" stroke="url(#g)" stroke-width="1.8"/>
+    <circle r="2.8" fill="url(#g)"/>
+  </g>
+  <text x="60" y="24" font-family="Fraunces, Georgia, serif" font-weight="500" font-size="21" fill="#EFEEE9" letter-spacing=".8">SENTINEL</text>
+  <text x="60" y="41" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="8.5" fill="#9AA1AD" letter-spacing="3.4">ASSURANCE GROUP</text>
+</svg>
