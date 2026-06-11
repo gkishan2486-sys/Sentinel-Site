@@ -125,9 +125,12 @@
   .foot-links{display:flex;gap:24px;flex-wrap:wrap}
   .foot-links a:hover{color:var(--gold)}
   .foot-legal{border-top:1px solid var(--panel-line);padding-top:24px;font-size:12.5px;line-height:1.7}
+
+.skip-link{position:absolute;left:-999px;top:0;z-index:1000;background:var(--gold,#E8C766);color:#0a0a0a;padding:10px 16px;border-radius:6px;font-weight:600;text-decoration:none}.skip-link:focus{left:8px;top:8px}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#content">Skip to content</a>
 
 <nav><div class="wrap nav-inner">
   <a href="#" class="logo">
@@ -146,6 +149,7 @@
     <a href="contact.html" class="nav-cta">Book a Call</a>
   </div>
 </div></nav>
+<main id="content">
 
 <header class="hero"><div class="ring2"></div><div class="wrap">
   <div class="eyebrow">Independent AI Assurance</div>
@@ -222,6 +226,7 @@
   <a class="btn btn-gold" href="contact.html">Book the call →</a>
 </div></section>
 
+</main>
 <footer><div class="wrap">
   <div class="foot-top">
     <div style="max-width:360px">

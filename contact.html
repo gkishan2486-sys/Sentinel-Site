@@ -113,9 +113,12 @@ footer{background:#070D18;color:var(--muted);padding:56px 0 40px;font-size:13.5p
 .legal-body p,.legal-body li{color:var(--muted);font-size:15px;margin-bottom:12px}
 .legal-body ul{padding-left:22px}
 .ph{background:rgba(232,199,102,.18);border-radius:3px;padding:0 4px}
+
+.skip-link{position:absolute;left:-999px;top:0;z-index:1000;background:var(--gold,#E8C766);color:#0a0a0a;padding:10px 16px;border-radius:6px;font-weight:600;text-decoration:none}.skip-link:focus{left:8px;top:8px}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#content">Skip to content</a>
 <nav><div class="wrap nav-inner">
   <a href="index.html" class="logo"><svg class="eye" width="44" height="30" viewBox="0 0 60 40" aria-hidden="true">
       <defs><linearGradient id="lgnav" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8C766"/><stop offset=".5" stop-color="#F5E3A8"/><stop offset="1" stop-color="#B8943B"/></linearGradient></defs>
@@ -130,6 +133,7 @@ footer{background:#070D18;color:var(--muted);padding:56px 0 40px;font-size:13.5p
     <a href="contact.html" class="nav-cta">Book a Call</a>
   </div>
 </div></nav>
+<main id="content">
 
 <header class="phero"><div class="wrap">
   <div class="eyebrow">Contact</div>
@@ -142,6 +146,7 @@ footer{background:#070D18;color:var(--muted);padding:56px 0 40px;font-size:13.5p
 <section><div class="wrap">
   <form class="form" action="https://formspree.io/f/maqzqgag" method="POST">
     <input type="hidden" name="_subject" value="New AI Risk Exposure call request — sentinelassurance.group">
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
     <div><label for="name">Name</label><input id="name" name="name" required></div>
     <div><label for="email">Work email</label><input id="email" name="email" type="email" required></div>
     <div><label for="company">Company</label><input id="company" name="company" required></div>
@@ -159,6 +164,7 @@ footer{background:#070D18;color:var(--muted);padding:56px 0 40px;font-size:13.5p
   <a class="btn btn-gold" href="contact.html">Book the call &rarr;</a>
 </div></section>
 
+</main>
 <footer><div class="wrap">
   <div class="foot-top">
     <div style="max-width:360px"><svg width="230" height="107" viewBox="0 0 240 112" style="margin-bottom:14px" aria-label="Sentinel Assurance Group">
