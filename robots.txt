@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sentinelassurance.group/sitemap.xml
+Sitemap: https://www.sentinelassurance.group/sitemap.xml
