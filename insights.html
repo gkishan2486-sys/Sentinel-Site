@@ -114,7 +114,7 @@ footer{background:#070D18;color:var(--muted);padding:56px 0 40px;font-size:13.5p
 .ph{background:rgba(232,199,102,.18);border-radius:3px;padding:0 4px}
 
 .skip-link{position:absolute;left:-999px;top:0;z-index:1000;background:var(--gold,#E8C766);color:#0a0a0a;padding:10px 16px;border-radius:6px;font-weight:600;text-decoration:none}.skip-link:focus{left:8px;top:8px}
-</style>
+.jumpnav{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 4px}.jumpnav a{display:inline-flex;align-items:center;gap:8px;padding:9px 17px;border:1px solid var(--panel-line);border-radius:999px;background:var(--panel);color:var(--txt);font-size:14px;font-weight:500;transition:.2s}.jumpnav a:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-1px)}.jumpnav a span{color:var(--muted);font-size:12px;font-weight:600}.jumpnav a:hover span{color:var(--gold-2)}</style>
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
@@ -132,7 +132,8 @@ footer{background:#070D18;color:var(--muted);padding:56px 0 40px;font-size:13.5p
   <p class="lead">Plain-English briefings on AI regulation and assurance &mdash; written for the people accountable, not the people impressed by jargon. Current as of July 2026.</p>
 </div></header>
 <section><div class="wrap">
-  <h2 style="font-family:'Fraunces',serif;color:var(--txt);font-weight:500;font-size:27px;letter-spacing:-.01em;margin:6px 0 4px">United States</h2>
+  <div class="jumpnav"><a href="#us">United States <span>16</span></a><a href="#international">International <span>4</span></a><a href="#frameworks">Frameworks &amp; Standards <span>2</span></a><a href="#threat">Threat Intelligence <span>2</span></a></div>
+  <h2 id="us" style="font-family:'Fraunces',serif;color:var(--txt);font-weight:500;font-size:27px;letter-spacing:-.01em;margin:6px 0 4px;scroll-margin-top:92px">United States</h2>
   <p style="color:var(--muted);font-size:14.5px;margin:0 0 6px">Federal posture and state-by-state AI law.</p>
   <div class="rule" style="margin-bottom:24px"></div>
   <div class="grid">
@@ -153,7 +154,7 @@ footer{background:#070D18;color:var(--muted);padding:56px 0 40px;font-size:13.5p
     <a class="card" href="insight-connecticut-cart-act.html"><div class="num">BRIEFING 05</div><h3>Connecticut&rsquo;s CART Act: the broadest state AI law yet</h3><p>Signed June 2, 2026, with obligations phasing in from October 2026. What deployers and developers face &mdash; and why it leans on disclosure, not bias audits.</p><div class="price grad">Read briefing &rarr;</div></a>
     <a class="card" href="insight-colorado-ai-act.html"><div class="num">BRIEFING 01</div><h3>Colorado&rsquo;s AI Act: delayed, paused, replaced</h3><p>The deadline moved three times and a court froze the law. What deployers actually face now under SB 26-189 (effective Jan 1, 2027).</p><div class="price grad">Read briefing &rarr;</div></a>
   </div>
-  <h2 style="font-family:'Fraunces',serif;color:var(--txt);font-weight:500;font-size:27px;letter-spacing:-.01em;margin:60px 0 4px">International</h2>
+  <h2 id="international" style="font-family:'Fraunces',serif;color:var(--txt);font-weight:500;font-size:27px;letter-spacing:-.01em;margin:60px 0 4px;scroll-margin-top:92px">International</h2>
   <p style="color:var(--muted);font-size:14.5px;margin:0 0 6px">How the EU, UK, South Korea, and Canada reach a US business.</p>
   <div class="rule" style="margin-bottom:24px"></div>
   <div class="grid">
@@ -162,14 +163,14 @@ footer{background:#070D18;color:var(--muted);padding:56px 0 40px;font-size:13.5p
     <a class="card" href="insight-uk-ai-regulation.html"><div class="num">INTL BRIEF</div><h3>The UK still has no AI Act &mdash; here&rsquo;s what actually binds</h3><p>Britain chose a regulator-led framework, not a statute. But UK GDPR&rsquo;s automated-decision rules, ICO guidance, and the 2025 Data (Use and Access) Act still bind AI that touches UK people.</p><div class="price grad">Read briefing &rarr;</div></a>
     <a class="card" href="insight-canada-quebec-law25.html"><div class="num">INTL BRIEF</div><h3>Canada&rsquo;s federal AI law died. Quebec&rsquo;s automated-decision rule didn&rsquo;t</h3><p>AIDA (Bill C-27) died in 2025 &mdash; but Quebec&rsquo;s Law 25 already requires you to explain automated decisions to the people they affect, with GDPR-scale penalties.</p><div class="price grad">Read briefing &rarr;</div></a>
   </div>
-  <h2 style="font-family:'Fraunces',serif;color:var(--txt);font-weight:500;font-size:27px;letter-spacing:-.01em;margin:60px 0 4px">Frameworks &amp; Standards</h2>
+  <h2 id="frameworks" style="font-family:'Fraunces',serif;color:var(--txt);font-weight:500;font-size:27px;letter-spacing:-.01em;margin:60px 0 4px;scroll-margin-top:92px">Frameworks &amp; Standards</h2>
   <p style="color:var(--muted);font-size:14.5px;margin:0 0 6px">The standards that travel across every jurisdiction.</p>
   <div class="rule" style="margin-bottom:24px"></div>
   <div class="grid">
     <a class="card" href="insight-iso-42001-plain-english.html"><div class="num">BRIEFING 03</div><h3>ISO/IEC 42001 in plain English</h3><p>What certification actually requires &mdash; clause by clause, Annex A and all &mdash; without the consultant fog.</p><div class="price grad">Read briefing &rarr;</div></a>
     <a class="card" href="insight-nist-ai-rmf-safe-harbor.html"><div class="num">BRIEFING 04</div><h3>NIST AI RMF as safe harbor</h3><p>Texas&rsquo;s TRAIGA is in force now and rewards NIST alignment. What the safe harbor gives you &mdash; and what it doesn&rsquo;t.</p><div class="price grad">Read briefing &rarr;</div></a>
   </div>
-  <h2 style="font-family:'Fraunces',serif;color:var(--txt);font-weight:500;font-size:27px;letter-spacing:-.01em;margin:60px 0 4px">Threat Intelligence</h2>
+  <h2 id="threat" style="font-family:'Fraunces',serif;color:var(--txt);font-weight:500;font-size:27px;letter-spacing:-.01em;margin:60px 0 4px;scroll-margin-top:92px">Threat Intelligence</h2>
   <p style="color:var(--muted);font-size:14.5px;margin:0 0 6px">Where AI systems are actually being attacked.</p>
   <div class="rule" style="margin-bottom:24px"></div>
   <div class="grid">
