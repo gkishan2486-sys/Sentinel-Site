@@ -1,6 +1,10 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/book", "destination": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Figyf9PKZ9yYe7RSpBvtuIjDe9XibXTyvOFLHuEQHjYJ5C0zUDUL95tspeaLrozTTxOnZsD8h?gv=true", "permanent": false },
+    { "source": "/booking", "destination": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Figyf9PKZ9yYe7RSpBvtuIjDe9XibXTyvOFLHuEQHjYJ5C0zUDUL95tspeaLrozTTxOnZsD8h?gv=true", "permanent": false }
+  ],
   "headers": [
     {
       "source": "/(.*)",
