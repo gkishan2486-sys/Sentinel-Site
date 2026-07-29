@@ -1,0 +1,15 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Local copies / backups not meant for the public repo
+index_v1_navy-green.html
+mockup_A_midnight-gold.html
+mockup_B_obsidian.html
+mockup_C_ivory-gold.html
+
+# Node (only if you later add tooling)
+node_modules/
