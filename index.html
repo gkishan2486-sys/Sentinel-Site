@@ -128,6 +128,24 @@
 
 .skip-link{position:absolute;left:-999px;top:0;z-index:1000;background:var(--gold,#E8C766);color:#0a0a0a;padding:10px 16px;border-radius:6px;font-weight:600;text-decoration:none}.skip-link:focus{left:8px;top:8px}
 </style>
+<style>
+/* SAG CRO 2026-08-05 - additive engagement styles */
+.insights-strip,.related-strip{background:var(--ink)}
+.related-strip{border-top:1px solid var(--panel-line)}
+.insights-strip .sec-head-link,.related-strip .sec-head-link{color:var(--gold);font-weight:600;font-size:14px;white-space:nowrap;text-decoration:none}
+.insights-strip .sec-head-link:hover,.related-strip .sec-head-link:hover{text-decoration:underline}
+.insights-strip a.card,.related-strip a.card{text-decoration:none;color:inherit}
+.insights-strip a.card:hover,.related-strip a.card:hover{transform:translateY(-4px);border-color:var(--gold-2)}
+.insights-strip a.card p{flex:1}
+.card .card-more{margin-top:16px;color:var(--gold);font-weight:600;font-size:14px;text-decoration:none;align-self:flex-start}
+.card .card-more:hover{text-decoration:underline}
+.cta-soft{margin-top:16px;font-size:14.5px;color:var(--muted)}
+.cta-soft a{color:var(--gold);font-weight:600;text-decoration:none}
+.cta-soft a:hover{text-decoration:underline}
+.sec-more{margin-top:28px}
+.sec-more a{color:var(--gold);font-weight:600;font-size:15px;text-decoration:none}
+.sec-more a:hover{text-decoration:underline}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
@@ -138,8 +156,8 @@
     <span class="word"><b>SENTINEL</b><span>ASSURANCE GROUP</span></span>
   </a>
   <div class="nav-links">
-    <a href="services.html">Services</a><a href="greenlight.html">GreenLight</a><a href="website-assurance.html">Website Assurance</a><a href="method.html">Our Method</a><a href="about.html">About</a><a href="insights.html">Insights</a>
-    <a href="contact.html" class="nav-cta">Book a Call</a>
+    <a href="services.html">Services</a><a href="insights.html">Insights</a><a href="greenlight.html">GreenLight</a><a href="website-assurance.html">Website Assurance</a><a href="method.html">Our Method</a><a href="about.html">About</a>
+    <a data-sag="nav_book" href="contact.html" class="nav-cta">Book a Call</a>
   </div>
 </div></nav>
 <main id="content">
@@ -150,8 +168,8 @@
   <h1>Prove your AI is governed.<br><span class="g grad">Before someone else proves it isn’t.</span></h1>
   <p>Sentinel Assurance Group delivers third-party AI governance assessments, ISO/IEC 42001 readiness, and adversarial testing — with the same documented rigor our founders apply inside an ISO/IEC 17025-accredited laboratory.</p>
   <div class="hero-ctas">
-    <a class="btn btn-gold" href="contact.html">Book a free AI Risk Exposure call →</a>
-    <a class="btn btn-glass" href="#method">See how we work</a>
+    <a data-sag="cta_book_primary" class="btn btn-gold" href="contact.html">Book a free AI Risk Exposure call →</a>
+    <a class="btn btn-glass" href="insights.html" data-sag="hero_secondary_insights">Read the briefings first &rarr;</a>
   </div>
 </div></header>
 
@@ -172,15 +190,15 @@
 <section id="services"><div class="wrap">
   <div class="sec-head">
     <div><div class="eyebrow">Services</div><h2>One ladder. Start where you actually are.</h2></div>
-    <a class="btn btn-glass" href="#contact">Free triage →</a>
+    <a data-sag="bridge_triage" class="btn btn-glass" href="#contact">Free triage →</a>
   </div>
   <div class="grid">
-    <div class="card"><div class="num">I</div><h3>AI Readiness Snapshot</h3><p>Fixed-scope, fast. Twelve anchor controls scored 0–4 against NIST AI RMF and ISO/IEC 42001, with a board-ready report.</p><div class="price grad">From $5,000<small>~2 weeks</small></div></div>
-    <div class="card"><div class="num">II</div><h3>Gap Assessment</h3><p>The full Sentinel Control Map™: 47 NIST AI RMF subcategories mapped to ISO/IEC 42001 clauses, scored with evidence.</p><div class="price grad">From $18,000<small>4–8 weeks</small></div></div>
-    <div class="card"><div class="num">III</div><h3>ISO/IEC 42001 Implementation</h3><p>A complete, certification-ready AI management system — policy to incident response — built with you, not dropped on you.</p><div class="price grad">From $40,000<small>3–6 months</small></div></div>
-    <div class="card" id="greenlight"><div class="num">IV</div><h3>Sentinel GreenLight™</h3><p>Application assurance for software teams: security, usability, privacy, and AI-governance triage before you ship.</p><div class="price grad">Free triage · from $5,000<small>Two-track: AI &amp; conventional</small></div></div>
+    <div class="card"><div class="num">I</div><h3>AI Readiness Snapshot</h3><p>Fixed-scope, fast. Twelve anchor controls scored 0–4 against NIST AI RMF and ISO/IEC 42001, with a board-ready report.</p><div class="price grad">From $5,000<small>~2 weeks</small></div><a data-sag="card_service_details" class="card-more" href="services.html">See the full ladder &rarr;</a></div>
+    <div class="card"><div class="num">II</div><h3>Gap Assessment</h3><p>The full Sentinel Control Map™: 47 NIST AI RMF subcategories mapped to ISO/IEC 42001 clauses, scored with evidence.</p><div class="price grad">From $18,000<small>4–8 weeks</small></div><a data-sag="card_service_details" class="card-more" href="gap-assessment.html">See details &rarr;</a></div>
+    <div class="card"><div class="num">III</div><h3>ISO/IEC 42001 Implementation</h3><p>A complete, certification-ready AI management system — policy to incident response — built with you, not dropped on you.</p><div class="price grad">From $40,000<small>3–6 months</small></div><a data-sag="card_service_details" class="card-more" href="iso-42001.html">See details &rarr;</a></div>
+    <div class="card" id="greenlight"><div class="num">IV</div><h3>Sentinel GreenLight™</h3><p>Application assurance for software teams: security, usability, privacy, and AI-governance triage before you ship.</p><div class="price grad">Free triage · from $5,000<small>Two-track: AI &amp; conventional</small></div><a data-sag="card_service_details" class="card-more" href="greenlight.html">See details &rarr;</a></div>
   </div>
-</div></section>
+<div class="sec-more"><a href="services.html" data-sag="home_services_full">Compare all tiers and pricing &rarr;</a></div></div></section>
 
 <section class="diff" id="method"><div class="wrap">
   <div class="eyebrow">Why Sentinel</div>
@@ -193,7 +211,7 @@
     <div class="stat"><b class="grad">3 frameworks</b><span>NIST AI RMF · ISO/IEC 42001 · EU AI Act, one assessment</span></div>
     <div class="stat"><b class="grad">0 certificates</b><span>We prepare you; accredited bodies certify you</span></div>
   </div>
-</div></section>
+<div class="sec-more"><a href="method.html" data-sag="home_method_full">How our method works &rarr;</a></div></div></section>
 
 <section class="process"><div class="wrap">
   <div class="eyebrow">How It Works</div>
@@ -213,10 +231,22 @@
   </div>
 </div></section>
 
+<section class="insights-strip"><div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Insights</div><h2>AI regulation, translated.</h2></div>
+      <a data-sag="sechead_insights" class="sec-head-link" href="insights.html">Browse all briefings &rarr;</a>
+    </div>
+    <div class="grid">
+      <a data-sag="card_briefing" class="card" href="insight-eu-ai-act-august-2-enforcement.html"><div class="num">International</div><h3>August 2: the EU AI Act gets teeth</h3><p>GPAI enforcement switched on, with fines up to 3% of global turnover. What actually reaches a US company.</p><div class="price grad">Read briefing &rarr;</div></a>
+      <a data-sag="card_briefing" class="card" href="insight-companion-chatbot-laws.html"><div class="num">United States</div><h3>Companion-chatbot laws: California SB 243</h3><p>The first US companion-chatbot law: AI disclosure, self-harm protocols, and a private right of action.</p><div class="price grad">Read briefing &rarr;</div></a>
+      <a data-sag="card_briefing" class="card" href="insight-iso-42001-plain-english.html"><div class="num">Frameworks</div><h3>ISO/IEC 42001 in plain English</h3><p>What certification actually requires, clause by clause, Annex A and all, without the consultant fog.</p><div class="price grad">Read briefing &rarr;</div></a>
+    </div>
+  </div></section>
+
 <section class="cta" id="contact"><div class="wrap">
   <h2>Find out where you stand.<br><span class="g grad">Free, 30 minutes, no deck.</span></h2>
   <p>The AI Risk Exposure call: we walk your AI footprint, flag your likely obligations, and tell you plainly whether and where you need help.</p>
-  <a class="btn btn-gold" href="contact.html">Book the call →</a>
+  <a data-sag="cta_book_primary" class="btn btn-gold" href="contact.html">Book the call →</a><p class="cta-soft">Not ready to talk? <a href="insights.html" data-sag="cta_soft_insights">Read the plain-English briefings &rarr;</a></p>
 </div></section>
 
 </main>
@@ -231,5 +261,6 @@
   <div class="foot-legal">© 2026 Sentinel Assurance Group. Sentinel Assurance Group provides assessment and advisory services. We are not a law firm, and nothing on this site is legal advice. We are not a certification body and do not issue ISO certifications.</div>
 </div></footer>
 
-<script defer src="/_vercel/insights/script.js"></script></body>
+<script defer src="/_vercel/insights/script.js"></script><script src="/sag-analytics.js" defer></script>
+</body>
 </html>

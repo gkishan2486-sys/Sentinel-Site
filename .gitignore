@@ -11,5 +11,15 @@ mockup_A_midnight-gold.html
 mockup_B_obsidian.html
 mockup_C_ivory-gold.html
 
+# Staging areas. sync-site.sh rsyncs this whole folder into the Sentinel-Site
+# clone and runs `git add -A` there, so anything not ignored HERE becomes
+# publicly downloadable at https://www.sentinelassurance.group/<path>.
+# These are gitignored in the AI-Firm root but that file does not travel.
+_UPLOAD_*/
+_reg-check-backups/
+
+# Logo source art, not a web asset. The site serves the SVG logos instead.
+Gold Geometric Shield Logo on Navy Background.png
+
 # Node (only if you later add tooling)
 node_modules/
