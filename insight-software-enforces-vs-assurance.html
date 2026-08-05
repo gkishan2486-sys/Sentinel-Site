@@ -78,6 +78,24 @@
     blockquote{font-size:20px}
   }
 </style>
+<style>
+/* SAG CRO 2026-08-05 - additive engagement styles */
+.insights-strip,.related-strip{background:var(--ink)}
+.related-strip{border-top:1px solid var(--panel-line)}
+.insights-strip .sec-head-link,.related-strip .sec-head-link{color:var(--gold);font-weight:600;font-size:14px;white-space:nowrap;text-decoration:none}
+.insights-strip .sec-head-link:hover,.related-strip .sec-head-link:hover{text-decoration:underline}
+.insights-strip a.card,.related-strip a.card{text-decoration:none;color:inherit}
+.insights-strip a.card:hover,.related-strip a.card:hover{transform:translateY(-4px);border-color:var(--gold-2)}
+.insights-strip a.card p{flex:1}
+.card .card-more{margin-top:16px;color:var(--gold);font-weight:600;font-size:14px;text-decoration:none;align-self:flex-start}
+.card .card-more:hover{text-decoration:underline}
+.cta-soft{margin-top:16px;font-size:14.5px;color:var(--muted)}
+.cta-soft a{color:var(--gold);font-weight:600;text-decoration:none}
+.cta-soft a:hover{text-decoration:underline}
+.sec-more{margin-top:28px}
+.sec-more a{color:var(--gold);font-weight:600;font-size:15px;text-decoration:none}
+.sec-more a:hover{text-decoration:underline}
+</style>
 </head>
 <body>
 
@@ -149,7 +167,7 @@
     <div class="cta">
       <h3>Where Sentinel Assurance Group fits</h3>
       <p>We're tool-agnostic — we don't sell, resell, or take referral fees from any AI guardrail. We help you <b>select</b> the right enforcement layer, <b>map</b> its settings to the exact controls your frameworks require, and <b>independently validate and attest</b> that it works — the seat no tool vendor can occupy for its own product.</p>
-      <a class="btn" href="/contact">Book an AI Risk Exposure call <span class="arw">→</span></a>
+      <a data-sag="cta_book_primary" class="btn" href="/contact">Book an AI Risk Exposure call <span class="arw">→</span></a>
     </div>
 
     <p class="note">Sentinel Assurance Group provides independent AI governance assurance for regulated organizations. This article is general information, not legal advice; tool categories are described for orientation and are not endorsements. Regulatory timelines and vendor facts current as of July 2026 — this market moves quickly.</p>
@@ -163,5 +181,6 @@
   </div>
 </footer>
 
-<script defer src="/_vercel/insights/script.js"></script></body>
+<script defer src="/_vercel/insights/script.js"></script><script src="/sag-analytics.js" defer></script>
+</body>
 </html>
