@@ -166,35 +166,35 @@ footer{background:#070D18;color:var(--muted);padding:56px 0 40px;font-size:13.5p
   <p class="byline">AI threat intelligence &middot; ~7 min read</p>
 </div></header>
 <section><div class="wrap"><div class="article">
-  <p class="lede">For two years, &ldquo;agentic AI risk&rdquo; was a slide in a deck. In the first two weeks of July 2026 it became an advisory, an exploit, and a ransomware operation. The attack surface has moved <b>up a layer</b> &mdash; away from the model itself and onto the <b>agent</b>: the orchestration platform, the tools it can call, and the credentials it can reach.</p>
+  <p class="lede">For two years, &ldquo;agentic AI risk&rdquo; was a slide in a deck. In the first two weeks of July 2026 it became an advisory, an exploit, and a ransomware operation. The attack surface has moved <b>up a layer</b>, away from the model itself and onto the <b>agent</b>: the orchestration platform, the tools it can call, and the credentials it can reach.</p>
   <p>Three items landed. Here they are, with the precision each deserves.</p>
 
   <h2>1. A confirmed, actively exploited flaw in an agent platform</h2>
   <p>On <b>July 7, 2026</b>, CISA added <b>CVE-2026-55255</b> to its Known Exploited Vulnerabilities catalog: a broken-authorization flaw (an IDOR at the <code>/api/v1/responses</code> endpoint) in <b>Langflow</b>, a widely used agent-orchestration platform. An authenticated attacker can execute another user&rsquo;s flow because the ownership check is missing. Sysdig observed exploitation in the wild from roughly <b>June 25</b>, aimed at code execution and second-stage implant delivery. CISA set a federal patch deadline under BOD 26-04.</p>
-  <p><b>A precision note, because accuracy is the product here:</b> at least one outlet reported this as the &ldquo;first AI agent platform added to KEV.&rdquo; That is wrong. A different Langflow flaw (CVE-2025-3248) has been KEV-listed since <b>May 2025</b>, and another since March 2026. CVE-2026-55255 is the <i>newest</i> Langflow entry, not the first. The real story is not novelty &mdash; it is <b>persistence</b>. This platform layer keeps getting exploited.</p>
+  <p><b>A precision note, because accuracy is the product here:</b> at least one outlet reported this as the &ldquo;first AI agent platform added to KEV.&rdquo; That is wrong. A different Langflow flaw (CVE-2025-3248) has been KEV-listed since <b>May 2025</b>, and another since March 2026. CVE-2026-55255 is the <i>newest</i> Langflow entry, not the first. The real story is not novelty, it is <b>persistence</b>. This platform layer keeps getting exploited.</p>
 
   <h2>2. Ransomware, run by the model</h2>
-  <p>On <b>July 1, 2026</b>, Sysdig&rsquo;s Threat Research Team published <b>JADEPUFFER</b>, which they assess as the first end-to-end LLM-driven &mdash; &ldquo;agentic&rdquo; &mdash; ransomware operation. Their account: the model entered through the 2025 Langflow RCE (CVE-2025-3248), then autonomously chained reconnaissance, credential harvesting, lateral movement, persistence, and a database-extortion playbook, narrating its own reasoning as it went, including correcting a failed login in about half a minute.</p>
+  <p>On <b>July 1, 2026</b>, Sysdig&rsquo;s Threat Research Team published <b>JADEPUFFER</b>, which they assess as the first end-to-end LLM-driven, &ldquo;agentic&rdquo; ransomware operation. Their account: the model entered through the 2025 Langflow RCE (CVE-2025-3248), then autonomously chained reconnaissance, credential harvesting, lateral movement, persistence, and a database-extortion playbook, narrating its own reasoning as it went, including correcting a failed login in about half a minute.</p>
   <p><b>The honest caveats matter, and we will not bury them:</b> this is a <b>single vendor&rsquo;s assessment</b>. &ldquo;First documented agentic ransomware&rdquo; is Sysdig&rsquo;s characterization, not an industry consensus. The claimed data exfiltration is the <b>agent&rsquo;s own self-narrated assertion</b>, not independently verified. And the entry point was a vulnerability from 2025, not a new one. Strip all of that away and what remains is still significant: a credible, detailed account of an autonomous system chaining an intrusion end to end, with the human operator supervising rather than driving.</p>
 
   <h2>3. Prompt injection that no reviewer sees</h2>
-  <p>Around <b>July 11</b>, researchers demonstrated <b>&ldquo;Ghostcommit&rdquo;</b> &mdash; hiding a prompt-injection payload inside a PNG image so that AI coding agents read it and leak <code>.env</code> secrets, while human and AI reviewers, who never open the image, see nothing. This is a <b>research demonstration</b>, not an exploited-in-the-wild vulnerability; there is no CVE. We cover it in its own briefing, because the most important finding in it is not the attack.</p>
+  <p>Around <b>July 11</b>, researchers demonstrated <b>&ldquo;Ghostcommit&rdquo;</b>, hiding a prompt-injection payload inside a PNG image so that AI coding agents read it and leak <code>.env</code> secrets, while human and AI reviewers, who never open the image, see nothing. This is a <b>research demonstration</b>, not an exploited-in-the-wild vulnerability; there is no CVE. We cover it in its own briefing, because the most important finding in it is not the attack.</p>
 
   <h2>What ties these together</h2>
-  <p>The industry spent 2024 and 2025 securing <i>models</i> &mdash; jailbreaks, harmful outputs, training-data leakage. Those problems did not go away, but they are no longer where the damage is coming from. The damage is coming from what we let the model <b>do</b>: call tools, execute code, hold credentials, act without a human in the loop.</p>
+  <p>The industry spent 2024 and 2025 securing <i>models</i>, jailbreaks, harmful outputs, training-data leakage. Those problems did not go away, but they are no longer where the damage is coming from. The damage is coming from what we let the model <b>do</b>: call tools, execute code, hold credentials, act without a human in the loop.</p>
   <p>That is the agentic layer, and it is precisely what the OWASP Top 10 for Agentic Applications (ASI01&ndash;10) was written to describe. The July cluster maps cleanly onto it: tool misuse and exploitation (ASI02), agent identity and privilege abuse (ASI03), unexpected code execution (ASI05), cascading agent failures (ASI08), and rogue agents (ASI10).</p>
-  <p>An agent&rsquo;s blast radius is not a property of the model. It is a property of your architecture &mdash; the permissions you granted, the tools you wired up, the secrets you left within reach.</p>
+  <p>An agent&rsquo;s blast radius is not a property of the model. It is a property of your architecture, the permissions you granted, the tools you wired up, the secrets you left within reach.</p>
 
   <div class="takeaway">
     <h3>What to do this week</h3>
-    <p>1. <b>Patch Langflow</b> (and inventory whether you run it at all &mdash; including inside a vendor&rsquo;s product). 2. <b>Inventory your agents,</b> not just your models. Which ones can execute code, call external tools, or read credentials? 3. <b>Apply least privilege to tools, not just users.</b> An agent with a broad API token is a standing privilege-escalation path. 4. <b>Log agent actions,</b> not just agent outputs &mdash; you cannot investigate what you did not record. 5. <b>Test the hijack case.</b> Assume an attacker controls the agent&rsquo;s instructions. What can it reach? Who has actually verified that, and can you show the result?</p>
+    <p>1. <b>Patch Langflow</b> (and inventory whether you run it at all, including inside a vendor&rsquo;s product). 2. <b>Inventory your agents,</b> not just your models. Which ones can execute code, call external tools, or read credentials? 3. <b>Apply least privilege to tools, not just users.</b> An agent with a broad API token is a standing privilege-escalation path. 4. <b>Log agent actions,</b> not just agent outputs, you cannot investigate what you did not record. 5. <b>Test the hijack case.</b> Assume an attacker controls the agent&rsquo;s instructions. What can it reach? Who has actually verified that, and can you show the result?</p>
   </div>
 
   <h3 class="serif" style="font-family:'Fraunces',serif;color:var(--txt);font-size:18px;margin:38px 0 10px">An honest limitation</h3>
   <p>One of these three items is a CISA-confirmed, actively exploited vulnerability. One is a single security vendor&rsquo;s detailed but unreplicated assessment. One is an academic demonstration with no CVE at all. They are not the same tier of evidence, and treating them as if they were is how vendors manufacture urgency. We have labelled each accordingly, and we would rather you act on the first with certainty than on all three with panic.</p>
   <p>What is not in doubt: agent-layer exploitation is no longer hypothetical, and the cheapest moment to find out what your agent can do under an attacker&rsquo;s control is <i>before</i> someone else finds out for you.</p>
 
-  <p class="disc">This briefing is threat and regulatory information from Sentinel Assurance Group, not legal advice, and not a substitute for your own vulnerability management. Details change quickly &mdash; verify against the primary advisories linked above before acting. Last reviewed July 14, 2026.</p>
+  <p class="disc">This briefing is threat and regulatory information from Sentinel Assurance Group, not legal advice, and not a substitute for your own vulnerability management. Details change quickly, verify against the primary advisories linked above before acting. Last reviewed July 14, 2026.</p>
 <a data-sag="bridge_contact" href="contact.html" class="btn btn-glass" style="margin-top:24px">Talk to us about testing your agents &rarr;</a>
 </div></div></section>
 <section class="related-strip"><div class="wrap">
@@ -223,7 +223,7 @@ footer{background:#070D18;color:var(--muted);padding:56px 0 40px;font-size:13.5p
 
 <section class="cta"><div class="wrap">
   <h2>What could your agent do<br><span class="g grad">if someone else were driving?</span></h2>
-  <p>A 30-minute conversation on where your agents can reach &mdash; and what an adversary could do with them.</p>
+  <p>A 30-minute conversation on where your agents can reach, and what an adversary could do with them.</p>
   <a data-sag="cta_book_primary" class="btn btn-gold" href="contact.html">Book the call &rarr;</a>
 </div></section>
 </main>
