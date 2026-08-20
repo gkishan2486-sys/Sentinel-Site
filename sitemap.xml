@@ -1,52 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Live domain: sentinelassurance.group. Submit this sitemap in Google Search Console after deploy. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.sentinelassurance.group/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.sentinelassurance.group/services</loc><priority>0.9</priority></url>
-  <url><loc>https://www.sentinelassurance.group/iso-42001</loc><priority>0.9</priority></url>
-  <url><loc>https://www.sentinelassurance.group/gap-assessment</loc><priority>0.8</priority></url>
-  <url><loc>https://www.sentinelassurance.group/red-team</loc><priority>0.8</priority></url>
-  <url><loc>https://www.sentinelassurance.group/greenlight</loc><priority>0.8</priority></url>
-  <url><loc>https://www.sentinelassurance.group/website-assurance</loc><priority>0.7</priority></url>
-  <url><loc>https://www.sentinelassurance.group/method</loc><priority>0.7</priority></url>
-  <url><loc>https://www.sentinelassurance.group/about</loc><priority>0.7</priority></url>
-  <url><loc>https://www.sentinelassurance.group/insights</loc><priority>0.7</priority></url>
-  <url><loc>https://www.sentinelassurance.group/insight-colorado-ai-act</loc><priority>0.6</priority></url>
-  <url><loc>https://www.sentinelassurance.group/insight-eu-ai-act-august</loc><priority>0.6</priority></url>
-  <url><loc>https://www.sentinelassurance.group/insight-iso-42001-plain-english</loc><priority>0.6</priority></url>
-  <url><loc>https://www.sentinelassurance.group/insight-nist-ai-rmf-safe-harbor</loc><priority>0.6</priority></url>
-  <url><loc>https://www.sentinelassurance.group/insight-connecticut-cart-act</loc><priority>0.6</priority></url>
-  <url><loc>https://www.sentinelassurance.group/insight-texas-traiga</loc><priority>0.6</priority><lastmod>2026-06-11</lastmod></url>
-  <url><loc>https://www.sentinelassurance.group/insight-illinois-hb3773</loc><priority>0.6</priority><lastmod>2026-06-11</lastmod></url>
-  <url><loc>https://www.sentinelassurance.group/insight-california-ai-laws</loc><priority>0.6</priority><lastmod>2026-06-11</lastmod></url>
-  <url><loc>https://www.sentinelassurance.group/insight-utah-ai-policy-act</loc><priority>0.6</priority><lastmod>2026-06-11</lastmod></url>
-  <url><loc>https://www.sentinelassurance.group/insight-new-jersey-ai-discrimination</loc><priority>0.6</priority><lastmod>2026-06-11</lastmod></url>
-  <url><loc>https://www.sentinelassurance.group/insight-ai-prior-authorization-laws</loc><priority>0.6</priority><lastmod>2026-07-10</lastmod></url>
-  <url><loc>https://www.sentinelassurance.group/contact</loc><priority>0.9</priority></url>
-  <url><loc>https://www.sentinelassurance.group/privacy</loc><priority>0.3</priority></url>
-  <url><loc>https://www.sentinelassurance.group/terms</loc><priority>0.3</priority></url>
-<url><loc>https://www.sentinelassurance.group/insight-illinois-sb315</loc><priority>0.8</priority></url>
-<url><loc>https://www.sentinelassurance.group/insight-agentic-attack-surface</loc><priority>0.7</priority></url>
-<url><loc>https://www.sentinelassurance.group/insight-ghostcommit-prompt-injection</loc><priority>0.7</priority></url>
-<url><loc>https://www.sentinelassurance.group/insight-nyc-local-law-144</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-california-sb1001-bot-disclosure</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-illinois-ai-video-interview-act</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-insurance-ai-colorado-naic</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-us-federal-ai-posture</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-uk-ai-regulation</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-canada-quebec-law25</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-south-korea-ai-basic-act</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-new-york-raise-act</loc><priority>0.7</priority></url>
-<url><loc>https://www.sentinelassurance.group/insight-companion-chatbot-laws</loc><priority>0.7</priority></url>
-<url><loc>https://www.sentinelassurance.group/insight-openai-huggingface-agent-breach</loc><priority>0.8</priority></url>
-<url><loc>https://www.sentinelassurance.group/insight-congress-ai-audit-bills</loc><priority>0.7</priority></url>
-<url><loc>https://www.sentinelassurance.group/insight-eu-ai-act-august-2-enforcement</loc><priority>0.8</priority></url>
-<url><loc>https://www.sentinelassurance.group/insight-colorado-ai-therapy-restrictions</loc><priority>0.7</priority><lastmod>2026-08-05</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-china-companion-ai</loc><priority>0.8</priority><lastmod>2026-08-05</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-ai-therapy-deceptive-practices</loc><priority>0.8</priority><lastmod>2026-08-10</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-minnesota-nudification</loc><priority>0.8</priority><lastmod>2026-08-10</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-india-synthetic-media</loc><priority>0.8</priority><lastmod>2026-08-10</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-ai-assurance-profession-regulated</loc><priority>0.9</priority><lastmod>2026-08-17</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-arizona-ai-medical-claims-myth</loc><priority>0.8</priority><lastmod>2026-08-17</lastmod></url>
-<url><loc>https://www.sentinelassurance.group/insight-sr-11-7-superseded</loc><priority>0.8</priority><lastmod>2026-08-17</lastmod></url>
+  <url><loc>https://sentinelassurance.group/</loc><priority>1.0</priority></url>
+  <url><loc>https://sentinelassurance.group/services</loc><priority>0.9</priority></url>
+  <url><loc>https://sentinelassurance.group/iso-42001</loc><priority>0.9</priority></url>
+  <url><loc>https://sentinelassurance.group/gap-assessment</loc><priority>0.8</priority></url>
+  <url><loc>https://sentinelassurance.group/red-team</loc><priority>0.8</priority></url>
+  <url><loc>https://sentinelassurance.group/greenlight</loc><priority>0.8</priority></url>
+  <url><loc>https://sentinelassurance.group/website-assurance</loc><priority>0.7</priority></url>
+  <url><loc>https://sentinelassurance.group/method</loc><priority>0.7</priority></url>
+  <url><loc>https://sentinelassurance.group/about</loc><priority>0.7</priority></url>
+  <url><loc>https://sentinelassurance.group/insights</loc><priority>0.7</priority></url>
+  <url><loc>https://sentinelassurance.group/insight-colorado-ai-act</loc><priority>0.6</priority></url>
+  <url><loc>https://sentinelassurance.group/insight-eu-ai-act-august</loc><priority>0.6</priority></url>
+  <url><loc>https://sentinelassurance.group/insight-iso-42001-plain-english</loc><priority>0.6</priority></url>
+  <url><loc>https://sentinelassurance.group/insight-nist-ai-rmf-safe-harbor</loc><priority>0.6</priority></url>
+  <url><loc>https://sentinelassurance.group/insight-connecticut-cart-act</loc><priority>0.6</priority></url>
+  <url><loc>https://sentinelassurance.group/insight-texas-traiga</loc><priority>0.6</priority><lastmod>2026-06-11</lastmod></url>
+  <url><loc>https://sentinelassurance.group/insight-illinois-hb3773</loc><priority>0.6</priority><lastmod>2026-06-11</lastmod></url>
+  <url><loc>https://sentinelassurance.group/insight-california-ai-laws</loc><priority>0.6</priority><lastmod>2026-06-11</lastmod></url>
+  <url><loc>https://sentinelassurance.group/insight-utah-ai-policy-act</loc><priority>0.6</priority><lastmod>2026-06-11</lastmod></url>
+  <url><loc>https://sentinelassurance.group/insight-new-jersey-ai-discrimination</loc><priority>0.6</priority><lastmod>2026-06-11</lastmod></url>
+  <url><loc>https://sentinelassurance.group/insight-ai-prior-authorization-laws</loc><priority>0.6</priority><lastmod>2026-07-10</lastmod></url>
+  <url><loc>https://sentinelassurance.group/contact</loc><priority>0.9</priority></url>
+  <url><loc>https://sentinelassurance.group/privacy</loc><priority>0.3</priority></url>
+  <url><loc>https://sentinelassurance.group/terms</loc><priority>0.3</priority></url>
+<url><loc>https://sentinelassurance.group/insight-illinois-sb315</loc><priority>0.8</priority></url>
+<url><loc>https://sentinelassurance.group/insight-agentic-attack-surface</loc><priority>0.7</priority></url>
+<url><loc>https://sentinelassurance.group/insight-ghostcommit-prompt-injection</loc><priority>0.7</priority></url>
+<url><loc>https://sentinelassurance.group/insight-nyc-local-law-144</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-california-sb1001-bot-disclosure</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-illinois-ai-video-interview-act</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-insurance-ai-colorado-naic</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-us-federal-ai-posture</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-uk-ai-regulation</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-canada-quebec-law25</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-south-korea-ai-basic-act</loc><priority>0.6</priority><lastmod>2026-07-22</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-new-york-raise-act</loc><priority>0.7</priority></url>
+<url><loc>https://sentinelassurance.group/insight-companion-chatbot-laws</loc><priority>0.7</priority></url>
+<url><loc>https://sentinelassurance.group/insight-openai-huggingface-agent-breach</loc><priority>0.8</priority></url>
+<url><loc>https://sentinelassurance.group/insight-congress-ai-audit-bills</loc><priority>0.7</priority></url>
+<url><loc>https://sentinelassurance.group/insight-eu-ai-act-august-2-enforcement</loc><priority>0.8</priority></url>
+<url><loc>https://sentinelassurance.group/insight-colorado-ai-therapy-restrictions</loc><priority>0.7</priority><lastmod>2026-08-05</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-china-companion-ai</loc><priority>0.8</priority><lastmod>2026-08-05</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-ai-therapy-deceptive-practices</loc><priority>0.8</priority><lastmod>2026-08-10</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-minnesota-nudification</loc><priority>0.8</priority><lastmod>2026-08-10</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-india-synthetic-media</loc><priority>0.8</priority><lastmod>2026-08-10</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-ai-assurance-profession-regulated</loc><priority>0.9</priority><lastmod>2026-08-17</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-arizona-ai-medical-claims-myth</loc><priority>0.8</priority><lastmod>2026-08-17</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-sr-11-7-superseded</loc><priority>0.8</priority><lastmod>2026-08-17</lastmod></url>
+<url><loc>https://sentinelassurance.group/insight-eu-ai-act-article-5-ncii-csam</loc><priority>0.8</priority><lastmod>2026-08-02</lastmod></url>
 </urlset>
