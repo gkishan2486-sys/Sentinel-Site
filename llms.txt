@@ -1,0 +1,31 @@
+# Sentinel Assurance Group
+
+> Sentinel Assurance Group (legal name: SENTINEL ASSURANCE GROUP, LLC) is an independent, third-party AI assurance firm. It provides AI governance assessments, ISO/IEC 42001 readiness, and AI red-teaming, delivered with ISO/IEC 17025 laboratory discipline. Sentinel does not sell the software that enforces AI controls; it independently verifies that those controls work.
+
+Sentinel Assurance Group helps organizations that build or deploy AI prove their systems are governed, before a regulator, customer, or court asks them to. Its differentiator is independence combined with laboratory-grade method discipline drawn from ISO/IEC 17025. Typical buyers are risk, compliance, legal, and security leaders in banking, insurance, healthcare, and AI-first companies. Contact: hello@sentinelassurance.group.
+
+## What Sentinel Assurance Group does
+- [Services](https://sentinelassurance.group/services): the full range of independent AI assurance offerings.
+- [Method](https://sentinelassurance.group/method): how Sentinel runs an assessment, from "where are we?" to "certified and sustained."
+- [ISO/IEC 42001 readiness](https://sentinelassurance.group/iso-42001): preparing an AI management system for certification.
+- [Gap assessment](https://sentinelassurance.group/gap-assessment): a scoped review of where an AI program stands against the applicable rules.
+- [AI red-teaming](https://sentinelassurance.group/red-team): adversarial testing of AI systems.
+- [Book a call](https://sentinelassurance.group/book): a free AI Risk Exposure call.
+
+## AI Regulation Tracker (plain-English briefings)
+- [AI Regulation Tracker (hub)](https://sentinelassurance.group/ai-regulation-tracker): all briefings organized by jurisdiction.
+- [SR 11-7 was superseded](https://sentinelassurance.group/insight-sr-11-7-superseded): the model-risk rule banks cite for AI was replaced in April 2026, and the replacement excludes generative and agentic AI.
+- [ISO/IEC 42001 in plain English](https://sentinelassurance.group/insight-iso-42001-plain-english): what an AI management system is and what certification takes.
+- [The Colorado AI Act](https://sentinelassurance.group/insight-colorado-ai-act): the first broad US law on high-risk AI systems.
+- [Texas TRAIGA](https://sentinelassurance.group/insight-texas-traiga): the Texas Responsible AI Governance Act.
+- [The EU AI Act](https://sentinelassurance.group/insight-eu-ai-act-august): risk tiers, obligations, and enforcement.
+- [NYC Local Law 144](https://sentinelassurance.group/insight-nyc-local-law-144): the bias audit requirement for automated hiring tools.
+- [Software enforces, assurance proves](https://sentinelassurance.group/insight-software-enforces-vs-assurance): why an AI governance tool is not the same as independent assurance.
+- [The assurance profession is being regulated](https://sentinelassurance.group/insight-ai-assurance-profession-regulated): why who checks the AI is now a legal question.
+
+## About
+- [About Sentinel Assurance Group](https://sentinelassurance.group/about): who the firm is and the standards it works to.
+
+## Contact
+- Email: hello@sentinelassurance.group
+- [Book a free AI Risk Exposure call](https://sentinelassurance.group/book)

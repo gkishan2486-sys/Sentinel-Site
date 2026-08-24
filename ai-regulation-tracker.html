@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Regulation Tracker | US, EU &amp; Global AI Laws Explained | Sentinel Assurance Group</title>
+<meta name="description" content="A plain-English tracker of the AI laws that matter: US federal and state rules, the EU AI Act, and global regulation. Each entry links to Sentinel Assurance Group's breakdown of what it means for AI deployers.">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://sentinelassurance.group/ai-regulation-tracker">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sentinel Assurance Group">
+<meta property="og:title" content="AI Regulation Tracker | US, EU &amp; Global AI Laws Explained">
+<meta property="og:description" content="A plain-English tracker of the AI laws that matter, each linked to what it means for AI deployers. Updated as the law moves.">
+<meta property="og:url" content="https://sentinelassurance.group/ai-regulation-tracker">
+<meta property="og:image" content="https://sentinelassurance.group/assets/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Regulation Tracker | US, EU &amp; Global AI Laws Explained">
+<meta name="twitter:description" content="A plain-English tracker of the AI laws that matter, each linked to what it means for AI deployers.">
+<meta name="twitter:image" content="https://sentinelassurance.group/assets/og-default.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0A1220; --ink-2:#0D1830; --panel:rgba(255,255,255,.04); --panel-line:rgba(255,255,255,.09);
+    --txt:#EFEEE9; --muted:#9AA1AD; --body-dark:#2A3442; --muted-light:#5E6877;
+    --paper:#F8F7F3; --line:#E6E2D6;
+    --gold:#E8C766; --gold-2:#B8943B; --gold-deep:#9A7A2C; --gold-glow:rgba(232,199,102,.15); --gold-pale:#F5ECD4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif;background:var(--ink);color:var(--txt);line-height:1.65;font-size:16px}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;letter-spacing:-.015em;line-height:1.1}
+  a{text-decoration:none;color:inherit}
+  section{padding:72px 0}
+  .eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .rule{width:64px;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-2));margin-bottom:28px}
+  .grad{background:linear-gradient(92deg,var(--gold) 0%,#F5E3A8 50%,var(--gold-2) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .btn{display:inline-block;padding:15px 30px;border-radius:8px;font-weight:600;font-size:15px;transition:.2s}
+  .btn-gold{background:linear-gradient(92deg,var(--gold),var(--gold-2));color:#13100A;box-shadow:0 0 36px var(--gold-glow)}
+  .btn-gold:hover{filter:brightness(1.08);transform:translateY(-1px)}
+  .btn-glass{border:1px solid var(--panel-line);background:var(--panel);color:var(--txt);backdrop-filter:blur(8px)}
+  .btn-glass:hover{border-color:var(--gold);color:var(--gold)}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(10,18,32,.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--panel-line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{display:flex;align-items:center;gap:12px;color:var(--txt)}
+  .logo .word{display:flex;flex-direction:column;line-height:1.05}
+  .logo .word b{font-family:'Fraunces',serif;font-size:19px;font-weight:500;letter-spacing:.08em}
+  .logo .word span{font-family:'Inter',sans-serif;font-size:9px;font-weight:600;letter-spacing:.32em;color:var(--gold);margin-top:3px}
+  .nav-links{display:flex;gap:32px;align-items:center;font-size:14px}
+  .nav-links a{color:var(--muted);font-weight:500}
+  .nav-links a:hover{color:var(--gold)}
+  .nav-cta{border:1px solid var(--gold);color:var(--gold)!important;padding:9px 20px;border-radius:6px}
+  .nav-cta:hover{background:linear-gradient(92deg,var(--gold),var(--gold-2));color:#13100A!important}
+  @media(max-width:860px){.nav-links a:not(.nav-cta){display:none}}
+
+  /* HERO */
+  .hero{background:linear-gradient(170deg,var(--ink) 55%,var(--ink-2));padding:96px 0 64px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-320px;left:50%;transform:translateX(-58%);width:980px;height:700px;background:radial-gradient(ellipse at center,var(--gold-glow),transparent 65%)}
+  .hero .wrap{position:relative;z-index:1}
+  .hero h1{color:var(--txt);font-size:clamp(34px,5vw,58px);max-width:880px;margin-bottom:22px}
+  .hero p{font-size:19px;color:var(--muted);max-width:680px;margin-bottom:26px}
+
+  /* JUMP NAV */
+  .jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .jump a{font-size:13px;color:var(--muted);border:1px solid var(--panel-line);background:var(--panel);padding:8px 14px;border-radius:999px}
+  .jump a:hover{border-color:var(--gold);color:var(--gold)}
+
+  /* GROUPS */
+  .group{margin-bottom:14px}
+  .group h2{font-size:26px;margin-bottom:6px}
+  .group .sub{color:var(--muted);font-size:14.5px;margin-bottom:22px}
+  .rows{display:grid;gap:10px}
+  .row{display:grid;grid-template-columns:150px 1fr auto;gap:18px;align-items:center;background:var(--panel);border:1px solid var(--panel-line);border-radius:10px;padding:16px 20px;transition:.18s}
+  .row:hover{border-color:var(--gold);background:rgba(232,199,102,.05)}
+  .row .juris{font-weight:700;font-size:13px;letter-spacing:.04em;color:var(--txt)}
+  .row .desc{color:var(--muted);font-size:14.5px}
+  .row .desc b{color:var(--txt);font-weight:600}
+  .chip{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;border:1px solid var(--gold-2);color:var(--gold);white-space:nowrap}
+  .go{color:var(--gold);font-size:13px;font-weight:600;white-space:nowrap}
+  @media(max-width:760px){.row{grid-template-columns:1fr;gap:8px}.go{justify-self:start}}
+
+  /* CTA band */
+  .cta-band{background:linear-gradient(120deg,var(--ink-2),#0b1526);border-top:1px solid var(--panel-line);border-bottom:1px solid var(--panel-line)}
+  .cta-band h2{font-size:30px;margin-bottom:14px}
+  .cta-band p{color:var(--muted);max-width:620px;margin-bottom:26px}
+
+  /* FAQ */
+  .faq{background:var(--paper);color:var(--body-dark)}
+  .faq h2{color:var(--ink);font-size:30px;margin-bottom:8px}
+  .faq .rule{margin-bottom:32px}
+  .qa{border-bottom:1px solid var(--line);padding:22px 0}
+  .qa h3{color:var(--ink);font-size:18px;margin-bottom:8px}
+  .qa p{color:var(--muted-light)}
+
+  /* FOOTER */
+  footer{background:var(--ink);border-top:1px solid var(--panel-line);padding:48px 0}
+  .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;color:var(--muted);font-size:13.5px}
+  .foot a{color:var(--muted)}.foot a:hover{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="logo" href="index.html">
+      <span class="eye" aria-hidden="true">◆</span>
+      <span class="word"><b>SENTINEL</b><span>ASSURANCE GROUP</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="method.html">Method</a>
+      <a href="services.html">Services</a>
+      <a href="ai-regulation-tracker.html">Tracker</a>
+      <a href="insights.html">Insights</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="book.html">Book a call</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">AI Regulation Tracker</div>
+    <h1>Every AI law that matters, <span class="grad">translated into what you must do</span>.</h1>
+    <p>The rules moved from hypothetical to enforceable. This is the map: US federal and state law, the EU AI Act, and the rest of the world. Each entry links to our plain-English breakdown, updated as the law moves.</p>
+    <a class="btn btn-gold" href="book.html">Find out where you stand</a>
+    <nav class="jump" aria-label="Jump to section">
+      <a href="#us-federal">US Federal</a>
+      <a href="#us-states">US States</a>
+      <a href="#health-sector">Health &amp; Sector</a>
+      <a href="#international">International</a>
+      <a href="#standards">Standards &amp; Security</a>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+
+    <div class="group" id="us-federal">
+      <h2>United States, federal</h2>
+      <p class="sub">What the federal posture actually requires, and the gap it leaves for AI.</p>
+      <div class="rows">
+        <a class="row" href="insight-sr-11-7-superseded.html">
+          <div class="juris">Model risk</div>
+          <div class="desc"><b>SR 11-7 was superseded.</b> The 2011 guidance banks cite for AI is gone. What replaced it, and why it excludes generative and agentic AI.</div>
+          <span class="chip">Superseded</span>
+        </a>
+        <a class="row" href="insight-nist-ai-rmf-safe-harbor.html">
+          <div class="juris">NIST</div>
+          <div class="desc"><b>NIST AI RMF as safe harbor.</b> How the framework is being treated as the standard of care, and its limits.</div>
+          <span class="chip">Framework</span>
+        </a>
+        <a class="row" href="insight-congress-ai-audit-bills.html">
+          <div class="juris">Congress</div>
+          <div class="desc"><b>Federal AI audit bills.</b> The proposals that would mandate independent AI assessment.</div>
+          <span class="chip">Proposals</span>
+        </a>
+        <a class="row" href="insight-us-federal-ai-posture.html">
+          <div class="juris">Overview</div>
+          <div class="desc"><b>The US federal AI posture.</b> Where the executive and agencies actually stand.</div>
+          <span class="chip">Explainer</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="group" id="us-states" style="margin-top:56px">
+      <h2>United States, states</h2>
+      <p class="sub">The patchwork that decides what applies where you operate.</p>
+      <div class="rows">
+        <a class="row" href="insight-colorado-ai-act.html">
+          <div class="juris">Colorado</div>
+          <div class="desc"><b>The Colorado AI Act.</b> The first broad US law on high-risk AI systems, and what deployers owe.</div>
+          <span class="chip">Enacted law</span>
+        </a>
+        <a class="row" href="insight-texas-traiga.html">
+          <div class="juris">Texas</div>
+          <div class="desc"><b>Texas TRAIGA.</b> The Responsible AI Governance Act and who it reaches.</div>
+          <span class="chip">Enacted law</span>
+        </a>
+        <a class="row" href="insight-california-ai-laws.html">
+          <div class="juris">California</div>
+          <div class="desc"><b>California's AI laws.</b> The stack of rules deployers in the state now face.</div>
+          <span class="chip">Explainer</span>
+        </a>
+        <a class="row" href="insight-california-sb1001-bot-disclosure.html">
+          <div class="juris">California</div>
+          <div class="desc"><b>SB 1001 bot disclosure.</b> When you must tell a person they are talking to a bot.</div>
+          <span class="chip">Enacted law</span>
+        </a>
+        <a class="row" href="insight-nyc-local-law-144.html">
+          <div class="juris">New York City</div>
+          <div class="desc"><b>Local Law 144.</b> The bias audit requirement for automated hiring tools.</div>
+          <span class="chip">In force</span>
+        </a>
+        <a class="row" href="insight-new-york-raise-act.html">
+          <div class="juris">New York</div>
+          <div class="desc"><b>The RAISE Act.</b> New York's frontier-model safety proposal.</div>
+          <span class="chip">Proposal</span>
+        </a>
+        <a class="row" href="insight-illinois-hb3773.html">
+          <div class="juris">Illinois</div>
+          <div class="desc"><b>HB 3773.</b> AI in employment decisions under the Human Rights Act.</div>
+          <span class="chip">Enacted law</span>
+        </a>
+        <a class="row" href="insight-illinois-ai-video-interview-act.html">
+          <div class="juris">Illinois</div>
+          <div class="desc"><b>AI Video Interview Act.</b> Consent and disclosure for AI-analyzed interviews.</div>
+          <span class="chip">In force</span>
+        </a>
+        <a class="row" href="insight-illinois-sb315.html">
+          <div class="juris">Illinois</div>
+          <div class="desc"><b>SB 315.</b> Our read on the proposal and its reach.</div>
+          <span class="chip">Briefing</span>
+        </a>
+        <a class="row" href="insight-utah-ai-policy-act.html">
+          <div class="juris">Utah</div>
+          <div class="desc"><b>The AI Policy Act.</b> Disclosure duties and the state's AI policy office.</div>
+          <span class="chip">In force</span>
+        </a>
+        <a class="row" href="insight-connecticut-cart-act.html">
+          <div class="juris">Connecticut</div>
+          <div class="desc"><b>The CART Act.</b> Connecticut's approach to AI accountability.</div>
+          <span class="chip">Briefing</span>
+        </a>
+        <a class="row" href="insight-new-jersey-ai-discrimination.html">
+          <div class="juris">New Jersey</div>
+          <div class="desc"><b>AI and discrimination.</b> How the state applies civil-rights law to automated decisions.</div>
+          <span class="chip">Guidance</span>
+        </a>
+        <a class="row" href="insight-minnesota-nudification.html">
+          <div class="juris">Minnesota</div>
+          <div class="desc"><b>Nudification and synthetic media.</b> The state's move against AI-generated intimate imagery.</div>
+          <span class="chip">Briefing</span>
+        </a>
+        <a class="row" href="insight-arizona-ai-medical-claims-myth.html">
+          <div class="juris">Arizona</div>
+          <div class="desc"><b>The AI medical-claims myth.</b> What the Arizona story does, and does not, actually say.</div>
+          <span class="chip">Explainer</span>
+        </a>
+        <a class="row" href="insight-insurance-ai-colorado-naic.html">
+          <div class="juris">Insurance</div>
+          <div class="desc"><b>Insurance AI, Colorado and NAIC.</b> The rules governing AI in underwriting and claims.</div>
+          <span class="chip">Guidance</span>
+        </a>
+        <a class="row" href="insight-ai-prior-authorization-laws.html">
+          <div class="juris">Health payers</div>
+          <div class="desc"><b>AI prior-authorization laws.</b> The state wave restricting AI denials in health coverage.</div>
+          <span class="chip">Briefing</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="group" id="health-sector" style="margin-top:56px">
+      <h2>Health, companion &amp; emerging AI</h2>
+      <p class="sub">Where the sharpest enforcement pressure is landing right now.</p>
+      <div class="rows">
+        <a class="row" href="insight-ai-therapy-deceptive-practices.html">
+          <div class="juris">AI therapy</div>
+          <div class="desc"><b>AI therapy and deceptive practices.</b> The consumer-protection theory regulators are using against AI mental-health claims.</div>
+          <span class="chip">Enforcement</span>
+        </a>
+        <a class="row" href="insight-colorado-ai-therapy-restrictions.html">
+          <div class="juris">Colorado</div>
+          <div class="desc"><b>AI therapy restrictions.</b> Colorado's limits on AI in mental-health care.</div>
+          <span class="chip">Briefing</span>
+        </a>
+        <a class="row" href="insight-companion-chatbot-laws.html">
+          <div class="juris">Companion AI</div>
+          <div class="desc"><b>Companion chatbot laws.</b> The rules taking shape around AI companions and minors.</div>
+          <span class="chip">Explainer</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="group" id="international" style="margin-top:56px">
+      <h2>International</h2>
+      <p class="sub">If you touch users abroad, these reach you.</p>
+      <div class="rows">
+        <a class="row" href="insight-eu-ai-act-august.html">
+          <div class="juris">European Union</div>
+          <div class="desc"><b>The EU AI Act.</b> The obligations, the risk tiers, and who is on the hook.</div>
+          <span class="chip">In force</span>
+        </a>
+        <a class="row" href="insight-eu-ai-act-august-2-enforcement.html">
+          <div class="juris">European Union</div>
+          <div class="desc"><b>August 2 enforcement.</b> The GPAI obligations that became enforceable and what they require.</div>
+          <span class="chip">In force</span>
+        </a>
+        <a class="row" href="insight-eu-ai-act-article-5-ncii-csam.html">
+          <div class="juris">European Union</div>
+          <div class="desc"><b>Article 5 prohibitions.</b> The banned practices, including synthetic intimate imagery.</div>
+          <span class="chip">In force</span>
+        </a>
+        <a class="row" href="insight-uk-ai-regulation.html">
+          <div class="juris">United Kingdom</div>
+          <div class="desc"><b>UK AI regulation.</b> The pro-innovation, regulator-led approach and what it asks of you.</div>
+          <span class="chip">Explainer</span>
+        </a>
+        <a class="row" href="insight-canada-quebec-law25.html">
+          <div class="juris">Canada / Quebec</div>
+          <div class="desc"><b>Quebec Law 25.</b> Automated-decision and privacy duties that bite AI systems.</div>
+          <span class="chip">In force</span>
+        </a>
+        <a class="row" href="insight-china-companion-ai.html">
+          <div class="juris">China</div>
+          <div class="desc"><b>Companion AI rules.</b> How China is governing emotional and companion AI.</div>
+          <span class="chip">Briefing</span>
+        </a>
+        <a class="row" href="insight-india-synthetic-media.html">
+          <div class="juris">India</div>
+          <div class="desc"><b>Synthetic media rules.</b> India's approach to deepfakes and labeling.</div>
+          <span class="chip">Briefing</span>
+        </a>
+        <a class="row" href="insight-south-korea-ai-basic-act.html">
+          <div class="juris">South Korea</div>
+          <div class="desc"><b>The AI Basic Act.</b> Korea's framework law and its duties for high-impact AI.</div>
+          <span class="chip">Enacted law</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="group" id="standards" style="margin-top:56px">
+      <h2>Standards, assurance &amp; AI security</h2>
+      <p class="sub">The frameworks you get measured against, and the threats that prove why.</p>
+      <div class="rows">
+        <a class="row" href="insight-iso-42001-plain-english.html">
+          <div class="juris">ISO/IEC 42001</div>
+          <div class="desc"><b>ISO 42001 in plain English.</b> What an AI management system is and what certification takes.</div>
+          <span class="chip">Standard</span>
+        </a>
+        <a class="row" href="insight-ai-assurance-profession-regulated.html">
+          <div class="juris">Assurance</div>
+          <div class="desc"><b>The assurance profession is being regulated.</b> Why who checks the AI is now a legal question.</div>
+          <span class="chip">Explainer</span>
+        </a>
+        <a class="row" href="insight-software-enforces-vs-assurance.html">
+          <div class="juris">Governance</div>
+          <div class="desc"><b>Software enforces, assurance proves.</b> Why a governance tool is not the same as independent assurance.</div>
+          <span class="chip">Explainer</span>
+        </a>
+        <a class="row" href="insight-agentic-attack-surface.html">
+          <div class="juris">AI security</div>
+          <div class="desc"><b>The agentic attack surface.</b> What breaks when AI can take actions, not just answer.</div>
+          <span class="chip">Security</span>
+        </a>
+        <a class="row" href="insight-ghostcommit-prompt-injection.html">
+          <div class="juris">AI security</div>
+          <div class="desc"><b>GhostCommit prompt injection.</b> A worked example of an injection reaching real systems.</div>
+          <span class="chip">Security</span>
+        </a>
+        <a class="row" href="insight-openai-huggingface-agent-breach.html">
+          <div class="juris">AI security</div>
+          <div class="desc"><b>The agent breach.</b> What the OpenAI and Hugging Face incident shows about agent risk.</div>
+          <span class="chip">Security</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <div class="eyebrow">State AI Law Watch</div>
+    <h2>This tracker changes as the laws do.</h2>
+    <p>Get the update the moment any entry moves, plus the plain-English read on what it means for AI deployers. No noise, no deck.</p>
+    <a class="btn btn-gold" href="subscribe.html">Get the updates</a>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--gold-2)">Common questions</div>
+    <h2>AI regulation, answered</h2>
+    <div class="rule"></div>
+    <div class="qa">
+      <h3>What AI laws apply to my company right now?</h3>
+      <p>It depends on where you operate and what your AI does. Most US deployers are touched by at least one state law plus the federal model-risk and NIST expectations, and anyone serving EU users falls under the EU AI Act. This tracker groups the rules by jurisdiction so you can find yours, and a short assessment call will map exactly which ones reach you.</p>
+    </div>
+    <div class="qa">
+      <h3>Is SR 11-7 still the rule for AI model risk in banks?</h3>
+      <p>No. SR 11-7 was superseded in April 2026. The replacement guidance is narrower, applies only to the largest banks, and expressly excludes generative and agentic AI, which leaves a real governance gap. Our full breakdown is linked in the US Federal section above.</p>
+    </div>
+    <div class="qa">
+      <h3>What is ISO/IEC 42001 and do I need it?</h3>
+      <p>ISO/IEC 42001 is the international standard for an AI management system. It is becoming the reference point buyers and regulators use to judge whether your AI is governed. Whether you need certification depends on your customers and risk exposure; our plain-English guide, linked above, walks through it.</p>
+    </div>
+    <div class="qa">
+      <h3>How does Sentinel Assurance Group help?</h3>
+      <p>Sentinel Assurance Group provides independent, third-party AI assurance: governance assessments, ISO/IEC 42001 readiness, and AI red-teaming, delivered with ISO/IEC 17025 laboratory discipline. We do not sell the software that enforces your controls; we independently prove they work. Book a free AI Risk Exposure call to start.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>&copy; 2026 Sentinel Assurance Group, LLC. Independent AI assurance.</div>
+    <div>
+      <a href="ai-regulation-tracker.html">Tracker</a> &nbsp;·&nbsp;
+      <a href="services.html">Services</a> &nbsp;·&nbsp;
+      <a href="about.html">About</a> &nbsp;·&nbsp;
+      <a href="mailto:hello@sentinelassurance.group">hello@sentinelassurance.group</a>
+    </div>
+  </div>
+</footer>
+
+<!-- JSON-LD: Breadcrumb + CollectionPage + FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://sentinelassurance.group/"},
+        {"@type":"ListItem","position":2,"name":"AI Regulation Tracker","item":"https://sentinelassurance.group/ai-regulation-tracker"}
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "name": "AI Regulation Tracker",
+      "description": "A plain-English tracker of US, EU, and global AI laws, each linked to a breakdown of what it means for AI deployers.",
+      "url": "https://sentinelassurance.group/ai-regulation-tracker",
+      "isPartOf": {"@type":"WebSite","name":"Sentinel Assurance Group","url":"https://sentinelassurance.group/"},
+      "publisher": {"@type":"Organization","name":"Sentinel Assurance Group","legalName":"SENTINEL ASSURANCE GROUP, LLC"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"What AI laws apply to my company right now?","acceptedAnswer":{"@type":"Answer","text":"It depends on where you operate and what your AI does. Most US deployers are touched by at least one state law plus the federal model-risk and NIST expectations, and anyone serving EU users falls under the EU AI Act."}},
+        {"@type":"Question","name":"Is SR 11-7 still the rule for AI model risk in banks?","acceptedAnswer":{"@type":"Answer","text":"No. SR 11-7 was superseded in April 2026. The replacement guidance is narrower, applies only to the largest banks, and expressly excludes generative and agentic AI, which leaves a governance gap."}},
+        {"@type":"Question","name":"What is ISO/IEC 42001 and do I need it?","acceptedAnswer":{"@type":"Answer","text":"ISO/IEC 42001 is the international standard for an AI management system. Whether you need certification depends on your customers and risk exposure."}},
+        {"@type":"Question","name":"How does Sentinel Assurance Group help?","acceptedAnswer":{"@type":"Answer","text":"Sentinel Assurance Group provides independent third-party AI assurance: governance assessments, ISO/IEC 42001 readiness, and AI red-teaming, delivered with ISO/IEC 17025 laboratory discipline."}}
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
