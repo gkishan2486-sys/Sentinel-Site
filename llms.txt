@@ -1,13 +1,16 @@
 # Sentinel Assurance Group
 
-> Sentinel Assurance Group (legal name: SENTINEL ASSURANCE GROUP, LLC) is an independent, third-party AI assurance firm. It provides AI governance assessments, ISO/IEC 42001 readiness, and AI red-teaming, delivered with ISO/IEC 17025 laboratory discipline. Sentinel does not sell the software that enforces AI controls; it independently verifies that those controls work.
+> Sentinel Assurance Group (legal name: SENTINEL ASSURANCE GROUP, LLC) is an independent, third-party AI assurance firm. It provides the AI Deployment Gate (a system-level go/no-go decision), AI governance assessments, ISO/IEC 42001 readiness, sector overlays for HIPAA and GxP, and AI red-teaming, delivered with ISO/IEC 17025 laboratory discipline. Sentinel assesses AI controls; it does not build or operate them. Sentinel does not sell the software that enforces AI controls; it independently verifies that those controls work.
 
 Sentinel Assurance Group helps organizations that build or deploy AI prove their systems are governed, before a regulator, customer, or court asks them to. Its differentiator is independence combined with laboratory-grade method discipline drawn from ISO/IEC 17025. Typical buyers are risk, compliance, legal, and security leaders in banking, insurance, healthcare, and AI-first companies. Contact: hello@sentinelassurance.group.
 
 ## What Sentinel Assurance Group does
 - [Services](https://sentinelassurance.group/services): the full range of independent AI assurance offerings.
 - [Method](https://sentinelassurance.group/method): how Sentinel runs an assessment, from "where are we?" to "certified and sustained."
-- [ISO/IEC 42001 readiness](https://sentinelassurance.group/iso-42001): preparing an AI management system for certification.
+- [AI Deployment Gate](https://sentinelassurance.group/services#gate): a five-gate, non-compensatory GREEN / YELLOW / RED decision on one AI system, from $4,000.
+- [ISO/IEC 42001 readiness](https://sentinelassurance.group/iso-42001): an independent readiness diagnostic and certification-readiness review for an AI management system.
+- [HIPAA and health-AI assurance](https://sentinelassurance.group/hipaa-ai-assurance): independent assessment of health apps, AI features and healthcare websites.
+- [GxP and life-sciences AI assurance](https://sentinelassurance.group/gxp-ai-assurance): 21 CFR Part 11, FDA CSA and ICH Q10 overlay for AI in regulated processes.
 - [Gap assessment](https://sentinelassurance.group/gap-assessment): a scoped review of where an AI program stands against the applicable rules.
 - [AI red-teaming](https://sentinelassurance.group/red-team): adversarial testing of AI systems.
 - [Book a call](https://sentinelassurance.group/book): a free AI Risk Exposure call.
