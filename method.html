@@ -194,6 +194,24 @@ footer{background:#070D18;color:var(--muted);padding:56px 0 40px;font-size:13.5p
   <a class="btn btn-gold" style="margin-top:14px" href="services.html#gate">How the Gate works &rarr;</a>
 </div></section>
 
+<section id="verdicts"><div class="wrap">
+  <h2 class="sec">What each verdict means</h2>
+  <p class="body">Every Sentinel service ends in a fixed verdict. Each keeps the words its parent instrument or your next step gives it, and each is derived by a published rule, never chosen. This table is SG-REF-VERDICTS-01; the method IDs are the controlled documents behind each service, available on request.</p>
+  <table class="ptable">
+    <tr><th>Service</th><th>Verdict words (best to worst)</th><th>What fixes it</th><th>Method</th></tr>
+    <tr><td>1</td><td>GreenLight Readiness Snapshot<span style="display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:5px;line-height:1.5">CLEARED / CONDITIONAL / HELD</span></td><td>Twelve anchor levels and the Gate-S standing, by a fixed rule</td><td>SG-MTH-WT-01</td></tr>
+    <tr><td>2</td><td>AI Readiness Snapshot<span style="display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:5px;line-height:1.5">CLEARED / CONDITIONAL / HELD</span></td><td>Severity derived from controls R1 to R12 and the HELD test</td><td>SG-MTH-RS-01</td></tr>
+    <tr><td>3</td><td>AI Exposure Baseline<span style="display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:5px;line-height:1.5">Exposure classes A to D per system; no verdict</span></td><td>Four classification tests per inventoried system</td><td>SG-MTH-AXB-01</td></tr>
+    <tr><td>4</td><td>AI Deployment Gate<span style="display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:5px;line-height:1.5">GREEN / YELLOW / RED</span></td><td>Five gate levels converted at the consequence tier; no gate offsets another</td><td>SG-STD-002, SG-MTH-GT-01</td></tr>
+    <tr><td>5</td><td>AI Governance Gap Assessment<span style="display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:5px;line-height:1.5">CERTIFICATION-READY BASELINE / SUBSTANTIALLY READY / PARTIALLY READY / EARLY STAGE</span></td><td>47 control levels, fixed percentage lines, a governance floor, and an inventory-and-owner cap</td><td>SG-MTH-CM-01</td></tr>
+    <tr><td>6</td><td>Inline AI Vendor Risk Assessment<span style="display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:5px;line-height:1.5">GO / CONDITIONAL-GO / NO-GO</span></td><td>Weighted score across 32 criteria and the count of critical failures</td><td>SG-MTH-VR-01</td></tr>
+    <tr><td>7</td><td>Conventional App Gap Assessment<span style="display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:5px;line-height:1.5">READY / READY WITH CONDITIONS / NOT READY</span></td><td>Any must-fix finding gives NOT READY; any recommended finding gives READY WITH CONDITIONS</td><td>SG-MTH-AG-01</td></tr>
+    <tr><td>8</td><td>ISO/IEC 42001 Certification-Readiness Review<span style="display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:5px;line-height:1.5">READY FOR STAGE 2 / READY FOR STAGE 1 / NOT READY</span></td><td>27 clause ratings with a three-minor escalation; internal audit, management review, and Statement of Applicability conditions</td><td>SG-MTH-42K-01</td></tr>
+    <tr><td>9</td><td>AI Red-Team Assessment<span style="display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:5px;line-height:1.5">ADEQUATE, FINDINGS CLOSED / ADEQUATE, FINDINGS OPEN / TESTING INADEQUATE</span></td><td>Gating regime elements, required-item coverage, and open Critical or High findings</td><td>SG-MTH-RT-01</td></tr>
+  </table>
+  <p class="body">Findings across services carry one client-facing class: <b style="color:var(--txt)">must-fix</b> (a store rejects it, the law exposes you, or the verdict turns on it), <b style="color:var(--txt)">recommended</b> (fix in the next cycle; the verdict does not turn on it), or <b style="color:var(--txt)">future</b> (note it for the roadmap). No verdict on this page is a certification, an approval by any body, or a statement of conformity to a standard or regulation.</p>
+</div></section>
+
 <section class="cta" id="contact"><div class="wrap">
   <h2>Find out where you stand.<br><span class="g grad">Free, 30 minutes, no deck.</span></h2>
   <p>The AI Risk Exposure call: we walk your AI footprint, flag your likely obligations, and tell you plainly whether and where you need help.</p>
